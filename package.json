@@ -1,22 +1,56 @@
 {
-  "name": "with-typescript",
+  "name": "personal-website",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicomanto/Personal-website.git"
+  },
+  "author": "Niccolò Mantovani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicomanto/Personal-website/issues"
+  },
+  "homepage": "https://github.com/nicomanto/Personal-website#readme",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "lint": "eslint . --ext ts,tsx --fix",
+    "checkWithLint": "eslint . --ext ts,tsx"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.1",
+    "bootstrap": "^4.6.0",
+    "i18next": "^20.3.0",
+    "i18next-browser-languagedetector": "^6.1.1",
     "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "nodemailer": "^6.6.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
+    "react-cookie-consent": "^6.2.4",
+    "react-dom": "^17.0.1",
+    "react-google-recaptcha": "^2.1.0",
+    "react-i18next": "^11.9.0",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
+    "@types/google.maps": "^3.45.2",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@types/react-google-recaptcha": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-next": "^11.0.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
     "typescript": "4.0"
-  },
-  "license": "MIT"
+  }
 }
