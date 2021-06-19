@@ -1,3 +1,10 @@
+/*index page*/
+
+.profilePicture{
+  width:90%;
+  border-radius: 20%;
+}
+
 
 /*Navbar*/
 .navbar{
