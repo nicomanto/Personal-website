@@ -1,0 +1,64 @@
+
+/*Navbar*/
+.navbar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navLink:hover{
+  text-decoration: none;
+}
+
+.navLink{
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  position: relative;
+}
+
+.navLink:after{    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: grey;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navLink:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar-toggler {
+    border: none;
+    margin-top: 0.3rem
+}
+
+
+.simpleLink{
+  text-decoration: none;
+}
+
+@media (max-width: 768px)
+{
+  /*Set navbar propeties for mobile menu*/
+  .navLink:after{
+    transition: none;
+    background: none;
+  }
+
+  .navLink:hover{
+    color:rgb(122, 122, 122)
+    
+  }
+
+  .navbar{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

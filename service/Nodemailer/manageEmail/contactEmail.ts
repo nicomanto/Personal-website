@@ -1,9 +1,6 @@
 import { EmailInfo, EmailOption } from "../../../interfaces/Email";
 import Nodemailer from "../Nodemailer";
-import {
-  contactHMTLTemplate,
-  contactTXTTemplate,
-} from "../templateEmail/contactRequest";
+import { contactHMTLTemplate, contactTXTTemplate } from "../templateEmail/contactRequest";
 
 const sendContactEmail = async (emailInfo: EmailInfo): Promise<boolean> => {
   const mailOption: EmailOption = {

@@ -29,16 +29,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    ns: [
-      "home",
-      "contacts",
-      "projects",
-      "experience",
-      "error",
-      "formEmail",
-      "layout",
-      "cookie",
-    ],
+    ns: ["home", "contacts", "projects", "experience", "error", "formEmail", "layout", "cookie"],
     resources,
     fallbackLng: "en",
     supportedLngs: ["en", "it"],

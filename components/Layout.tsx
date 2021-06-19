@@ -1,10 +1,11 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
-import { Navbar Nav} from "react-bootstrap";
+import { Navbar, Nav} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n/config";
 import NavbarItem from "../interfaces/NavbarItem";
+import Image from 'next/image'
 
 type Props = {
   children?: ReactNode
@@ -15,6 +16,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
   const { t } = useTranslation(["layout"]);
 
   const navbar: NavbarItem[] = [
+    { title: "Home", URL: "/"},
     { title: t('experience'), URL: "/experience" },
     { title: t('projects'), URL: "/projects" },
     { title: t('contacts'), URL: "/contacts" },
@@ -38,22 +40,16 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
         </Head>
       <header>
       <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home" lang="it" title="Home">Niccolò Mantovani</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    </Navbar.Collapse>
-</Navbar>
+        <Navbar.Brand className="navLinkBrand" href="#logo" lang="it"><Image src="/img/logo.svg" alt="Lettera N di colore nero" width="64" height="64" /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav"/>
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="ml-auto">
+            {navbar.map((item) => (
+                <Nav.Link className="navLink text-right px-4" href={item.URL}>{item.title}</Nav.Link>
+              ))}
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
       </header>
       {children}
       <footer className="text-center mb-3">
@@ -63,7 +59,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
             {" "}
             <a
               lang="it"
-              className="simpleLink"
+              className="simpleLink text-dark"
               target="_blank"
               rel="noopener me noreferrer"
               title="Niccolò Mantovani site"
@@ -73,8 +69,8 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
             </a>
           </p>
 
-          <Button variant="outline-light" onClick={() => {changeLanguage("it");}} size="sm">IT</Button>
-          <Button variant="outline-light" onClick={() => {changeLanguage("en");}} size="sm">EN</Button>
+          <Button variant="outline-dark" onClick={() => {changeLanguage("it");}} size="sm">IT</Button>
+          <Button variant="outline-dark" onClick={() => {changeLanguage("en");}} size="sm">EN</Button>
         </footer>
     </>
   )
