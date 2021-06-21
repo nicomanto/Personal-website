@@ -39,7 +39,7 @@ const IndexPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiGithub />
+                <SiGithub className="iconInfo" />
               </a>
             </li>
             <li className="list-inline-item mx-2">
@@ -50,7 +50,7 @@ const IndexPage = () => {
                 target="_blank"
                 rel="noopener"
               >
-                <SiLinkedin />
+                <SiLinkedin className="iconInfo" />
               </a>
             </li>
             <li className="list-inline-item mx-2">
@@ -61,7 +61,7 @@ const IndexPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiTelegram />
+                <SiTelegram className="iconInfo" />
               </a>
             </li>
             <li className="list-inline-item mx-2">
@@ -72,7 +72,7 @@ const IndexPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiInstagram />
+                <SiInstagram className="iconInfo" />
               </a>
             </li>
             <li className="list-inline-item mx-2">
@@ -83,22 +83,22 @@ const IndexPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiFacebook />
+                <SiFacebook className="iconInfo" />
               </a>
             </li>
           </ul>
 
           <ListGroup variant="flush" className="my-4">
             <ListGroup.Item title="Birthday">
-              <IoCalendarSharp />
+              <IoCalendarSharp className="iconInfo mb-1" />
               {` ${t("personalInfo.birthday")}`}
             </ListGroup.Item>
             <ListGroup.Item title="Works location">
-              <IoLocationSharp />
+              <IoLocationSharp className="iconInfo mb-1" />
               {` ${t("personalInfo.location")}`}
             </ListGroup.Item>
             <ListGroup.Item title="Language">
-              <IoLanguageSharp />
+              <IoLanguageSharp className="iconInfo mb-1" />
               {` ${t("personalInfo.language")}`}
             </ListGroup.Item>
           </ListGroup>
