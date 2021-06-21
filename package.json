@@ -32,7 +32,8 @@
     "react-dom": "^17.0.1",
     "react-google-recaptcha": "^2.1.0",
     "react-i18next": "^11.9.0",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "react-vertical-timeline-component": "^3.3.3"
   },
   "devDependencies": {
     "@types/google.maps": "^3.45.2",
