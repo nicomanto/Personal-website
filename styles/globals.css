@@ -1,10 +1,7 @@
-/*index page*/
-
-.profilePicture{
-  width:90%;
-  border-radius: 20%;
+/*general layout*/
+.principalContent{
+  margin: 0 10% 0 10%;
 }
-
 
 /*Navbar*/
 .navbar{
@@ -46,12 +43,67 @@
     margin-top: 0.3rem
 }
 
-
 .simpleLink{
   text-decoration: none;
 }
 
-@media (max-width: 768px)
+
+/*index page*/
+
+.profilePicture{
+  width:50%;
+  min-width: 260px;
+  border-radius: 20%;
+}
+
+.socialIconLink{
+  text-decoration: none;
+  color: #212529;
+}
+
+.socialIconLink:hover{
+  opacity:50%;
+  color: #212529;
+}
+
+.biographyIndex{
+  max-height: 80vh;
+  overflow-y: hidden;
+}
+
+.biographyIndex:hover{
+  overflow-y: scroll;
+}
+
+.biographyIndex::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+.biographyIndex::-webkit-scrollbar-thumb {
+  background-color: #212529;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+
+
+
+/*WhatIDo card component*/
+.whatIDoCard{
+  text-align: center;
+  min-width: 450px;
+  max-width: 450px;
+}
+.iconCard{
+  align-self: center;
+  margin-top: 20px;
+  width: 4vw;
+  height: 4vh;
+}
+
+
+
+
+@media (max-width: 992px)
 {
   /*Set navbar propeties for mobile menu*/
   .navLink:after{
@@ -67,5 +119,15 @@
   .navbar{
     padding-left: 0;
     padding-right: 0;
+  }
+
+
+  /*remove scroll bar into mobile view*/
+  .biographyIndex{
+    max-height: none;
+  }
+
+  .biographyIndex:hover{
+    overflow-y: hidden;
   }
 }

@@ -51,7 +51,9 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
         </Navbar.Collapse>
       </Navbar>
       </header>
+      <main className="principalContent">
       {children}
+      </main>
       <footer className="text-center mb-3">
           <p>
             {" "}
@@ -61,7 +63,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
               lang="it"
               className="simpleLink text-dark"
               target="_blank"
-              rel="noopener me noreferrer"
+              rel="noopener noreferrer"
               title="Niccolò Mantovani site"
               href="https://nicomanto.github.io/About-me"
             >
