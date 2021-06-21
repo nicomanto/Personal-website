@@ -1,0 +1,17 @@
+{
+    "pageName": "Experience | Niccolò Mantovani",
+    "title": "Professional experience",
+    "subtitle": "Educational and working",
+    "experience": {
+        "itis": {
+            "title": "ITIS Enrico Fermi",
+            "place": "Mantua, MN",
+            "description": "Secondary school diploma, IT specialization. Basic knowledge of some programming languages ​​and key concepts in the IT field."
+        },
+        "unipd": {
+            "title": "University of Padua",
+            "place": "Padua, PD",
+            "description": "Bachelor's Degree School of Sciences, IT specialization. In-depth knowledge of many programming languages, both functional and object-oriented. Acquisition of best practices in the field of software development regarding its life cycle and management of the organization of the development team through agile methodologies."
+        }
+    }
+}

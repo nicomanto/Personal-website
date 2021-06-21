@@ -1,0 +1,17 @@
+{
+    "pageName": "Esperienza | Niccolò Mantovani",
+    "title": "Esperienza professionale",
+    "subtitle": "Educativa e lavorativa",
+    "experience": {
+        "itis": {
+            "title": "ITIS Enrico Fermi",
+            "place": "Mantova, MN",
+            "description": "Diploma, indirizzo Informatico. Conoscenza di base di alcuni linguaggi di programmazione e di concetti chiave nell'ambito informatico."
+        },
+        "unipd": {
+            "title": "Università degli Studi di Padova",
+            "place": "Padova, PD",
+            "description": "Laurea Triennale Scuola di Scienze, indirizzo Informatico. Conoscenza approfondità di molti linguaggi di programmazione, sia funzionali che ad oggetti. Acquisizione di best practies nell'ambito di sviluppo software riguardo al suo ciclo di vita e alla gestione dell'ogranizzazione del team di sviluppo tramite metodologie agili."
+        }
+    }
+}

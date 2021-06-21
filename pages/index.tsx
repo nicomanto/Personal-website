@@ -16,8 +16,8 @@ const IndexPage = () => {
 
   return (
     <Layout title="Home | Niccolò Mantovani">
-      <Row>
-        <Col lg={4} className="text-center my-4 mx-4">
+      <Row className="my-4">
+        <Col lg={4} className="text-center my-auto">
           <img
             className="profilePicture"
             src="https://www.gravatar.com/avatar/cceb51c1797bca97b7cd5211907dd744?s=1000"
@@ -26,7 +26,7 @@ const IndexPage = () => {
           <h1 lang="it" className="my-2 display-4 nameTitle">
             Niccolò Mantovani
           </h1>
-          <Badge pill variant="info" className="badgeSD">
+          <Badge pill variant="info" className="badgeSD my-2">
             {t("badge")}
           </Badge>
 
