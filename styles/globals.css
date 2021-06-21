@@ -52,7 +52,7 @@
 
 .profilePicture{
   width:50%;
-  min-width: 260px;
+  min-width: 200px;
   border-radius: 20%;
 }
 
@@ -84,20 +84,24 @@
   border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
+.nameTitle{
+  font-size: 2.5em;
+}
+
 
 
 
 /*WhatIDo card component*/
 .whatIDoCard{
   text-align: center;
-  min-width: 450px;
   max-width: 450px;
+  min-width: 250px;
 }
 .iconCard{
   align-self: center;
   margin-top: 20px;
-  width: 4vw;
-  height: 4vh;
+  width: 40px;
+  height: 40px;
 }
 
 

@@ -23,15 +23,15 @@ const IndexPage = () => {
             src="https://www.gravatar.com/avatar/cceb51c1797bca97b7cd5211907dd744?s=1000"
             alt="Niccolò Mantovani profile"
           />
-          <h1 lang="it" className="my-2">
+          <h1 lang="it" className="my-2 display-4 nameTitle">
             Niccolò Mantovani
           </h1>
-          <Badge pill variant="info my-4">
+          <Badge pill variant="info">
             {t("badge")}
           </Badge>
 
           <ul className="list-inline mx-auto justify-content-center my-2">
-            <li className="list-inline-item">
+            <li className="list-inline-item mx-2">
               <a
                 href="https://github.com/nicomanto"
                 className="socialIconLink"
@@ -42,7 +42,7 @@ const IndexPage = () => {
                 <SiGithub />
               </a>
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item mx-2">
               <a
                 href="/"
                 title="LinkedIn Niccolò Mantovani"
@@ -53,7 +53,7 @@ const IndexPage = () => {
                 <SiLinkedin />
               </a>
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item mx-2">
               <a
                 href="https://t.me/nicomanto"
                 className="socialIconLink"
@@ -64,7 +64,7 @@ const IndexPage = () => {
                 <SiTelegram />
               </a>
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item mx-2">
               <a
                 href="https://www.instagram.com/niccolo_mantovani"
                 className="socialIconLink"
@@ -75,7 +75,7 @@ const IndexPage = () => {
                 <SiInstagram />
               </a>
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item mx-2">
               <a
                 href="https://www.facebook.com/nicomanto49"
                 className="socialIconLink"
@@ -105,9 +105,9 @@ const IndexPage = () => {
 
           <a href="/CV/CV-Mantovani Niccolò-IT.pdf" download>
             <Button title="Download Curriculm Vitae" lang="en" variant="dark">
-              Download
+              {"Download "}
               <abbr lang="la" title="Curriculum Vitae">
-                {" CV"}
+                CV
               </abbr>
             </Button>
           </a>
