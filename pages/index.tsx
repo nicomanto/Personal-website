@@ -26,7 +26,7 @@ const IndexPage = () => {
           <h1 lang="it" className="my-2 display-4 nameTitle">
             Niccolò Mantovani
           </h1>
-          <Badge pill variant="info">
+          <Badge pill variant="info" className="badgeSD">
             {t("badge")}
           </Badge>
 
