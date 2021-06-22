@@ -8,6 +8,7 @@ import cookieEN from "./en/components/cookie.json";
 import personalInfoEN from "./en/components/personalInfo.json";
 import indexEN from "./en/pages/index.json";
 import experienceEN from "./en/pages/experience.json";
+import timelineEN from "./EN/components/timeline.json";
 import errorIT from "./it/pages/error.json";
 import formEmailIT from "./it/components/formEmail.json";
 import layoutIT from "./it/components/layout.json";
@@ -15,6 +16,7 @@ import cookieIT from "./it/components/cookie.json";
 import indexIT from "./it/pages/index.json";
 import experienceIT from "./it/pages/experience.json";
 import personalInfoIT from "./it/components/personalInfo.json";
+import timelineIT from "./it/components/timeline.json";
 
 const resources = {
   en: {
@@ -25,6 +27,7 @@ const resources = {
     index: indexEN,
     experience: experienceEN,
     personalInfo: personalInfoEN,
+    timeline: timelineEN,
   },
   it: {
     error: errorIT,
@@ -34,6 +37,7 @@ const resources = {
     index: indexIT,
     experience: experienceIT,
     personalInfo: personalInfoIT,
+    timeline: timelineIT,
   },
 };
 
@@ -51,6 +55,7 @@ i18n
       "layout",
       "cookie",
       "personalInfo",
+      "timeline",
     ],
     resources,
     fallbackLng: "en",

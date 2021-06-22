@@ -1,13 +1,36 @@
 import React from "react";
+import { GetStaticProps } from "next";
 import { useTranslation } from "react-i18next";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import { IoSchoolOutline } from "react-icons/io5";
 import Layout from "../../components/Layout";
 import "react-vertical-timeline-component/style.min.css";
 import Skill from "../../interfaces/Skill";
 import Skills from "../../components/Skills/Skills";
+import TimeLineElement from "../../interfaces/TimelineElement";
+import ExperienceTimeline from "../../components/Timeline/ExperienceTimeline";
 
-const getSkills = (): Skill[] => {
+type Props = {
+  skillList: Skill[];
+  timeLineElementList: TimeLineElement[];
+};
+
+const ExperiencePage = ({ skillList, timeLineElementList }: Props) => {
+  const { t } = useTranslation(["experience"]);
+
+  return (
+    <Layout title={t("pageName")}>
+      <div className="text-center my-4">
+        <h1>{t("title")}</h1>
+        <h2>{t("subtitle")}</h2>
+      </div>
+
+      <ExperienceTimeline timeLineElementList={timeLineElementList} />
+
+      <Skills skillList={skillList} />
+    </Layout>
+  );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
   const skillList: Skill[] = [
     {
       name: "TypeScript",
@@ -74,45 +97,37 @@ const getSkills = (): Skill[] => {
       name: "CD",
       abbr: "Continuous Deployment",
     },
+    {
+      name: "TDD",
+      abbr: "Test Driven Development",
+    },
   ];
 
-  return skillList;
-};
+  const timeLineElementList: TimeLineElement[] = [
+    {
+      date: {
+        date: "09/2018 -",
+        presentI18n: true,
+      },
+      icon: "education",
+      i18nParam: "unipd",
+    },
+    {
+      date: {
+        date: "09/2013 - 07/2018",
+        presentI18n: false,
+      },
+      icon: "education",
+      i18nParam: "itis",
+    },
+  ];
 
-const ExperiencePage = () => {
-  const { t } = useTranslation(["experience"]);
-
-  return (
-    <Layout title={t("pageName")}>
-      <div className="text-center my-4">
-        <h1>{t("title")}</h1>
-        <h2>{t("subtitle")}</h2>
-      </div>
-
-      <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date={`09/2018 - ${t("experience.present")}`}
-          icon={<IoSchoolOutline />}
-        >
-          <h3 className="vertical-timeline-element-title">{t("experience.unipd.title")}</h3>
-          <h4 className="vertical-timeline-element-subtitle">{t("experience.unipd.place")}</h4>
-          <p>{t("experience.unipd.description")}</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="09/2013 - 07/2018"
-          icon={<IoSchoolOutline />}
-        >
-          <h3 className="vertical-timeline-element-title">{t("experience.itis.title")}</h3>
-          <h4 className="vertical-timeline-element-subtitle">{t("experience.itis.place")}</h4>
-          <p>{t("experience.itis.description")}</p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
-
-      <Skills skillList={getSkills()} />
-    </Layout>
-  );
+  return {
+    props: {
+      skillList,
+      timeLineElementList,
+    },
+  };
 };
 
 export default ExperiencePage;
