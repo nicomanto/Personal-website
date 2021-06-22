@@ -1,4 +1,4 @@
-import { Row, Col} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { IoServerOutline } from "react-icons/io5";
 import { BsCodeSlash, BsWindow } from "react-icons/bs";
@@ -13,7 +13,7 @@ const IndexPage = () => {
     <Layout title="Home | Niccolò Mantovani">
       <Row className="my-4">
         <Col lg={4} className="text-center my-auto">
-          <PersonalInfo/>
+          <PersonalInfo />
         </Col>
         <Col lg className="biographyIndex my-4">
           <h1>{t("title")}</h1>

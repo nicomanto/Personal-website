@@ -18,11 +18,7 @@ const ExperiencePage = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          contentArrowStyle={{ borderRight: "7px solid  #6c757d" }}
-          contentStyle={{ background: "#6c757d", color: "#fff" }}
-          iconStyle={{ background: "#6c757d", color: "#fff" }}
-          dateClassName="text-dark"
+          date={`09/2018 - ${t("experience.present")}`}
           icon={<IoSchoolOutline />}
         >
           <h3 className="vertical-timeline-element-title">{t("experience.unipd.title")}</h3>
@@ -31,11 +27,7 @@ const ExperiencePage = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212529", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #212529" }}
-          date="2011 - present"
-          dateClassName="text-dark"
-          iconStyle={{ background: "#212529", color: "#fff" }}
+          date="09/2013 - 07/2018"
           icon={<IoSchoolOutline />}
         >
           <h3 className="vertical-timeline-element-title">{t("experience.itis.title")}</h3>

@@ -24,7 +24,7 @@ const resources = {
     cookie: cookieEN,
     index: indexEN,
     experience: experienceEN,
-    personalInfo: personalInfoEN
+    personalInfo: personalInfoEN,
   },
   it: {
     error: errorIT,
@@ -33,7 +33,7 @@ const resources = {
     cookie: cookieIT,
     index: indexIT,
     experience: experienceIT,
-    personalInfo: personalInfoIT
+    personalInfo: personalInfoIT,
   },
 };
 
@@ -41,7 +41,17 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    ns: ["index", "contacts", "projects", "experience", "error", "formEmail", "layout", "cookie", "personalInfo"],
+    ns: [
+      "index",
+      "contacts",
+      "projects",
+      "experience",
+      "error",
+      "formEmail",
+      "layout",
+      "cookie",
+      "personalInfo",
+    ],
     resources,
     fallbackLng: "en",
     supportedLngs: ["en", "it"],
