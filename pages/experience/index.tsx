@@ -4,6 +4,80 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import { IoSchoolOutline } from "react-icons/io5";
 import Layout from "../../components/Layout";
 import "react-vertical-timeline-component/style.min.css";
+import Skill from "../../interfaces/Skill";
+import Skills from "../../components/Skills/Skills";
+
+const getSkills = (): Skill[] => {
+  const skillList: Skill[] = [
+    {
+      name: "TypeScript",
+    },
+    {
+      name: "JavaScript",
+    },
+    {
+      name: "C",
+    },
+    {
+      name: "C++",
+    },
+    {
+      name: "Java",
+    },
+    {
+      name: "PHP",
+      abbr: "Hypertext Preprocessor",
+    },
+    {
+      name: "Boostrap",
+    },
+    {
+      name: "API",
+      abbr: "Application Programming Interface",
+    },
+    {
+      name: "AWS",
+      abbr: "Amazon Web Services",
+    },
+    {
+      name: "Serverless",
+    },
+    {
+      name: "Next.js",
+    },
+    {
+      name: "HTML",
+      abbr: "HyperText Markup Language",
+    },
+    {
+      name: "CSS",
+      abbr: "Cascading Style Sheets",
+    },
+    {
+      name: "SQL",
+      abbr: "Structured Query Language",
+    },
+    {
+      name: "Python",
+    },
+    {
+      name: "Latex",
+    },
+    {
+      name: "Scala",
+    },
+    {
+      name: "CI",
+      abbr: "Continuous Integration",
+    },
+    {
+      name: "CD",
+      abbr: "Continuous Deployment",
+    },
+  ];
+
+  return skillList;
+};
 
 const ExperiencePage = () => {
   const { t } = useTranslation(["experience"]);
@@ -35,6 +109,8 @@ const ExperiencePage = () => {
           <p>{t("experience.itis.description")}</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
+
+      <Skills skillList={getSkills()} />
     </Layout>
   );
 };

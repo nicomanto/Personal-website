@@ -8,7 +8,7 @@ type Props = {
   icon: IconBaseProps;
 };
 
-const CardWhatIDo = ({ title, description, icon }: Props) => (
+const PersonalCard = ({ title, description, icon }: Props) => (
   <Card className="whatIDoCard mx-auto my-2">
     {icon}
     <Card.Body>
@@ -18,4 +18,4 @@ const CardWhatIDo = ({ title, description, icon }: Props) => (
   </Card>
 );
 
-export default CardWhatIDo;
+export default PersonalCard;

@@ -1,10 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Badge, Button, ListGroup } from "react-bootstrap";
-import { SiInstagram, SiGithub, SiLinkedin, SiFacebook, SiTelegram } from "react-icons/si";
-import { IoCalendarSharp, IoLanguageSharp, IoLocationSharp } from "react-icons/io5";
+import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo/PersonalInfo";
 
-const PersonalInfo = () => {
+type Props = {
+  socialList: Social[];
+  personalInfoList: PersonalInfoForList[];
+};
+
+const PersonalInfo = ({ socialList, personalInfoList }: Props) => {
   const { t } = useTranslation(["personalInfo"]);
 
   return (
@@ -22,76 +26,31 @@ const PersonalInfo = () => {
       </Badge>
 
       <ul className="list-inline mx-auto justify-content-center my-2">
-        <li className="list-inline-item mx-2">
-          <a
-            href="https://github.com/nicomanto"
-            className="socialIconLink"
-            title="GitHub Niccolò Mantovani"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiGithub className="iconInfo" />
-          </a>
-        </li>
-        <li className="list-inline-item mx-2">
-          <a
-            href="/"
-            title="LinkedIn Niccolò Mantovani"
-            className="socialIconLink"
-            target="_blank"
-            rel="noopener"
-          >
-            <SiLinkedin className="iconInfo" />
-          </a>
-        </li>
-        <li className="list-inline-item mx-2">
-          <a
-            href="https://t.me/nicomanto"
-            className="socialIconLink"
-            title="Telegram Niccolò Mantovani"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiTelegram className="iconInfo" />
-          </a>
-        </li>
-        <li className="list-inline-item mx-2">
-          <a
-            href="https://www.instagram.com/niccolo_mantovani"
-            className="socialIconLink"
-            title="Instagram Niccolò Mantovani"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiInstagram className="iconInfo" />
-          </a>
-        </li>
-        <li className="list-inline-item mx-2">
-          <a
-            href="https://www.facebook.com/nicomanto49"
-            className="socialIconLink"
-            title="Facebook Niccolò Mantovani"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiFacebook className="iconInfo" />
-          </a>
-        </li>
+        {socialList.map((element) => {
+          return (
+            <li className="list-inline-item mx-2">
+              <a
+                href={element.url}
+                className="socialIconLink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {element.icon}
+              </a>
+            </li>
+          );
+        })}
       </ul>
 
       <ListGroup variant="flush" className="my-4">
-        <ListGroup.Item title="Birthday">
-          <IoCalendarSharp className="iconInfo mb-1" />
-          {` ${t("personalInfo.birthday")}`}
-        </ListGroup.Item>
-        <ListGroup.Item title="Works location">
-          <IoLocationSharp className="iconInfo mb-1" />
-          {` ${t("personalInfo.location")}`}
-        </ListGroup.Item>
-        <ListGroup.Item title="Language">
-          <IoLanguageSharp className="iconInfo mb-1" />
-          {` ${t("personalInfo.language")}`}
-        </ListGroup.Item>
+        {personalInfoList.map((element) => {
+          return (
+            <ListGroup.Item title={element.title}>
+              {element.icon}
+              {` ${t(`personalInfo.${element.i18nParam}`)}`}
+            </ListGroup.Item>
+          );
+        })}
       </ListGroup>
 
       <a href="/CV/CV-Mantovani Niccolò-IT.pdf" download>

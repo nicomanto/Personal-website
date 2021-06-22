@@ -17,12 +17,7 @@ const PersonalWebsite = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Component {...pageProps} />
-      <CookieConsent
-        style={{ background: "white" }}
-        contentClasses="CookieContent"
-        buttonWrapperClasses="CookieWrapperButton"
-        buttonText={t("button")}
-      >
+      <CookieConsent style={{ background: "#212529" }} buttonText={t("button")}>
         {t("message")}
       </CookieConsent>
     </>
