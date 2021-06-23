@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Layout from "../../components/Layout";
 import "react-vertical-timeline-component/style.min.css";
 import Skill from "../../interfaces/Skill";
-import Skills from "../../components/Skills/Skills";
+import SkillsContainer from "../../components/Skills/SkillsContainer";
 import TimeLineElement from "../../interfaces/TimelineElement";
 import ExperienceTimeline from "../../components/Timeline/ExperienceTimeline";
 
@@ -25,7 +25,7 @@ const ExperiencePage = ({ skillList, timeLineElementList }: Props) => {
 
       <ExperienceTimeline timeLineElementList={timeLineElementList} />
 
-      <Skills skillList={skillList} />
+      <SkillsContainer skillList={skillList} />
     </Layout>
   );
 };
@@ -101,6 +101,9 @@ export const getStaticProps: GetStaticProps = async () => {
       name: "TDD",
       abbr: "Test Driven Development",
     },
+    {
+      name: "React",
+    },
   ];
 
   const timeLineElementList: TimeLineElement[] = [
@@ -109,7 +112,7 @@ export const getStaticProps: GetStaticProps = async () => {
         date: "09/2018 -",
         presentI18n: true,
       },
-      icon: "education",
+      iconType: "education",
       i18nParam: "unipd",
     },
     {
@@ -117,7 +120,7 @@ export const getStaticProps: GetStaticProps = async () => {
         date: "09/2013 - 07/2018",
         presentI18n: false,
       },
-      icon: "education",
+      iconType: "education",
       i18nParam: "itis",
     },
   ];

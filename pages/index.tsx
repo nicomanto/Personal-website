@@ -8,11 +8,11 @@ import {
 } from "react-icons/io5";
 import { BsCodeSlash, BsWindow } from "react-icons/bs";
 import { SiInstagram, SiGithub, SiLinkedin, SiFacebook, SiTelegram } from "react-icons/si";
-
 import Layout from "../components/Layout";
-import PersonalCard from "../components/Card/PersonalCard";
 import { Social, PersonalInfoForList } from "../interfaces/PersonalInfo/PersonalInfo";
-import PersonalInfo from "../components/PersonalInfo/PersonalInfo";
+import PersonalInfoID from "../components/PersonalInfo/PersonalInfoID";
+import WhatIDoCard from "../interfaces/WhatIDoCard";
+import WhatIDoCardList from "../components/Card/WhatIDoCard/WhatIDoCardList";
 
 const getSocial = (): Social[] => {
   const socialList: Social[] = [
@@ -62,6 +62,24 @@ const getPersonalInfoList = (): PersonalInfoForList[] => {
   return personalInfoList;
 };
 
+const getWhatIDoInfo = (): WhatIDoCard[] => {
+  const WhatIDoInfo: WhatIDoCard[] = [
+    {
+      I18nparam: "BE",
+      icon: <IoServerOutline className="iconCard" />,
+    },
+    {
+      I18nparam: "FE",
+      icon: <BsCodeSlash className="iconCard" />,
+    },
+    {
+      I18nparam: "WEB",
+      icon: <BsWindow className="iconCard" />,
+    },
+  ];
+  return WhatIDoInfo;
+};
+
 const IndexPage = () => {
   const { t } = useTranslation(["index"]);
 
@@ -69,36 +87,14 @@ const IndexPage = () => {
     <Layout title="Home | Niccolò Mantovani">
       <Row className="my-4">
         <Col lg={4} className="text-center my-auto">
-          <PersonalInfo socialList={getSocial()} personalInfoList={getPersonalInfoList()} />
+          <PersonalInfoID socialList={getSocial()} personalInfoList={getPersonalInfoList()} />
         </Col>
         <Col lg className="biographyIndex my-4">
           <h1>{t("title")}</h1>
           <p>{t("biography")}</p>
 
-          <h2>{t("whatIDo.title")}</h2>
-          <Row>
-            <Col>
-              <PersonalCard
-                title={t("whatIDo.BE.title")}
-                description={t("whatIDo.BE.description")}
-                icon={<IoServerOutline className="iconCard" />}
-              />
-            </Col>
-            <Col>
-              <PersonalCard
-                title={t("whatIDo.FE.title")}
-                description={t("whatIDo.FE.description")}
-                icon={<BsCodeSlash className="iconCard" />}
-              />
-            </Col>
-            <Col>
-              <PersonalCard
-                title={t("whatIDo.WEB.title")}
-                description={t("whatIDo.WEB.description")}
-                icon={<BsWindow className="iconCard" />}
-              />
-            </Col>
-          </Row>
+          <h2>{t("subtitle")}</h2>
+          <WhatIDoCardList cardList={getWhatIDoInfo()} />
         </Col>
       </Row>
     </Layout>

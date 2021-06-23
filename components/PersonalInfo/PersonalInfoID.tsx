@@ -8,7 +8,7 @@ type Props = {
   personalInfoList: PersonalInfoForList[];
 };
 
-const PersonalInfo = ({ socialList, personalInfoList }: Props) => {
+const PersonalInfoID = ({ socialList, personalInfoList }: Props) => {
   const { t } = useTranslation(["personalInfo"]);
 
   return (
@@ -65,4 +65,4 @@ const PersonalInfo = ({ socialList, personalInfoList }: Props) => {
   );
 };
 
-export default PersonalInfo;
+export default PersonalInfoID;

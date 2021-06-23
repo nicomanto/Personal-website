@@ -1,0 +1,14 @@
+{
+    "BE":{
+        "title": "Sviluppatore Back-end",
+        "description": "Sviluppo di applicativi professionali lato Back-end."
+    },
+    "FE":{
+        "title": "Sviluppatore Front-end",
+        "description": "Sviluppo di applicativi professionali lato Front-end."
+    },
+    "WEB":{
+        "title": "Sviluppatore Web",
+        "description": "Sviluppo di applicativi web professionali e responsive."
+    }
+}

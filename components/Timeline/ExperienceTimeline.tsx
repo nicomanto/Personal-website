@@ -19,7 +19,7 @@ const ExperienceTimeline = ({ timeLineElementList }: Props) => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={element.date.presentI18n ? element.date.date + t("present") : element.date.date}
-            icon={element.icon === "education" ? <IoSchoolOutline /> : <IoBriefcaseOutline />}
+            icon={element.iconType === "education" ? <IoSchoolOutline /> : <IoBriefcaseOutline />}
           >
             <h3 className="vertical-timeline-element-title">{t(`${element.i18nParam}.title`)}</h3>
             <h4 className="vertical-timeline-element-subtitle">

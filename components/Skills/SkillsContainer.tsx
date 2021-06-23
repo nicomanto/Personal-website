@@ -6,7 +6,7 @@ type Props = {
   skillList: Skill[];
 };
 
-const Skills = ({ skillList }: Props) => (
+const SkillsContainer = ({ skillList }: Props) => (
   <Container className="text-center my-4" lang="en">
     <h1>Skills</h1>
     <ul className="list-inline mx-auto justify-content-center my-2">
@@ -27,4 +27,4 @@ const Skills = ({ skillList }: Props) => (
   </Container>
 );
 
-export default Skills;
+export default SkillsContainer;

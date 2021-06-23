@@ -9,6 +9,7 @@ import personalInfoEN from "./en/components/personalInfo.json";
 import indexEN from "./en/pages/index.json";
 import experienceEN from "./en/pages/experience.json";
 import timelineEN from "./en/components/timeline.json";
+import whatIDoEN from "./en/components/whatIDo.json";
 import errorIT from "./it/pages/error.json";
 import formEmailIT from "./it/components/formEmail.json";
 import layoutIT from "./it/components/layout.json";
@@ -17,6 +18,7 @@ import indexIT from "./it/pages/index.json";
 import experienceIT from "./it/pages/experience.json";
 import personalInfoIT from "./it/components/personalInfo.json";
 import timelineIT from "./it/components/timeline.json";
+import whatIDoIT from "./it/components/whatIDo.json";
 
 const resources = {
   en: {
@@ -28,6 +30,7 @@ const resources = {
     experience: experienceEN,
     personalInfo: personalInfoEN,
     timeline: timelineEN,
+    whatIDo: whatIDoEN,
   },
   it: {
     error: errorIT,
@@ -38,6 +41,7 @@ const resources = {
     experience: experienceIT,
     personalInfo: personalInfoIT,
     timeline: timelineIT,
+    whatIDo: whatIDoIT,
   },
 };
 
@@ -56,6 +60,7 @@ i18n
       "cookie",
       "personalInfo",
       "timeline",
+      "whatIDo",
     ],
     resources,
     fallbackLng: "en",

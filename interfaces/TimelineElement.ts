@@ -1,6 +1,6 @@
 export default interface TimeLineElement {
   readonly date: DateTimeLine;
-  readonly icon: string;
+  readonly iconType: string;
   readonly i18nParam: string;
 }
 
