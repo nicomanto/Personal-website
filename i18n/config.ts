@@ -8,7 +8,7 @@ import cookieEN from "./en/components/cookie.json";
 import personalInfoEN from "./en/components/personalInfo.json";
 import indexEN from "./en/pages/index.json";
 import experienceEN from "./en/pages/experience.json";
-import timelineEN from "./EN/components/timeline.json";
+import timelineEN from "./en/components/timeline.json";
 import errorIT from "./it/pages/error.json";
 import formEmailIT from "./it/components/formEmail.json";
 import layoutIT from "./it/components/layout.json";
