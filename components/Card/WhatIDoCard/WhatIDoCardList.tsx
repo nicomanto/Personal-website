@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import WhatIDoCard from "../../../interfaces/WhatIDoCard";
+import WhatIDoCard from "../../../interfaces/Card/WhatIDoCard";
 import WhatIDoCardElement from "./WhatIDoCard";
 
 type Props = {
@@ -12,7 +12,7 @@ const WhatIDoCardList = ({ cardList }: Props) => (
     {cardList.map((element) => {
       return (
         <Col>
-          <WhatIDoCardElement i18nParam={element.I18nparam} icon={element.icon} />
+          <WhatIDoCardElement card={element} />
         </Col>
       );
     })}

@@ -10,6 +10,8 @@ import indexEN from "./en/pages/index.json";
 import experienceEN from "./en/pages/experience.json";
 import timelineEN from "./en/components/timeline.json";
 import whatIDoEN from "./en/components/whatIDo.json";
+import projectsListEN from "./en/components/projectsList.json";
+import projectsEN from "./en/pages/projects.json";
 import errorIT from "./it/pages/error.json";
 import formEmailIT from "./it/components/formEmail.json";
 import layoutIT from "./it/components/layout.json";
@@ -19,6 +21,8 @@ import experienceIT from "./it/pages/experience.json";
 import personalInfoIT from "./it/components/personalInfo.json";
 import timelineIT from "./it/components/timeline.json";
 import whatIDoIT from "./it/components/whatIDo.json";
+import projectsListIT from "./it/components/projectsList.json";
+import projectsIT from "./it/pages/projects.json";
 
 const resources = {
   en: {
@@ -31,6 +35,8 @@ const resources = {
     personalInfo: personalInfoEN,
     timeline: timelineEN,
     whatIDo: whatIDoEN,
+    projectsList: projectsListEN,
+    projects: projectsEN,
   },
   it: {
     error: errorIT,
@@ -42,6 +48,8 @@ const resources = {
     personalInfo: personalInfoIT,
     timeline: timelineIT,
     whatIDo: whatIDoIT,
+    projectsList: projectsListIT,
+    projects: projectsIT,
   },
 };
 
@@ -61,6 +69,8 @@ i18n
       "personalInfo",
       "timeline",
       "whatIDo",
+      "projects",
+      "projectsList",
     ],
     resources,
     fallbackLng: "en",

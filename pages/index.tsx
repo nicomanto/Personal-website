@@ -11,7 +11,7 @@ import { SiInstagram, SiGithub, SiLinkedin, SiFacebook, SiTelegram } from "react
 import Layout from "../components/Layout";
 import { Social, PersonalInfoForList } from "../interfaces/PersonalInfo/PersonalInfo";
 import PersonalInfoID from "../components/PersonalInfo/PersonalInfoID";
-import WhatIDoCard from "../interfaces/WhatIDoCard";
+import WhatIDoCard from "../interfaces/Card/WhatIDoCard";
 import WhatIDoCardList from "../components/Card/WhatIDoCard/WhatIDoCardList";
 
 const getSocial = (): Social[] => {
@@ -65,15 +65,15 @@ const getPersonalInfoList = (): PersonalInfoForList[] => {
 const getWhatIDoInfo = (): WhatIDoCard[] => {
   const WhatIDoInfo: WhatIDoCard[] = [
     {
-      I18nparam: "BE",
+      i18nParam: "BE",
       icon: <IoServerOutline className="iconCard" />,
     },
     {
-      I18nparam: "FE",
+      i18nParam: "FE",
       icon: <BsCodeSlash className="iconCard" />,
     },
     {
-      I18nparam: "WEB",
+      i18nParam: "WEB",
       icon: <BsWindow className="iconCard" />,
     },
   ];
