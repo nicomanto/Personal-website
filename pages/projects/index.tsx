@@ -33,7 +33,7 @@ const getProjectsInfo = (): ProjectCard[] => {
     },
     {
       i18nParam: "Oenology",
-      imgName: "",
+      imgName: "oenology.png",
       projectGitHubURL: "https://github.com/nicomanto/Oenology",
       haveBERole: true,
       haveFERole: false,
