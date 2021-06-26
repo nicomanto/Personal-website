@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Badge, Button, ListGroup } from "react-bootstrap";
-import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo/PersonalInfo";
+import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo";
 
 type Props = {
   socialList: Social[];
