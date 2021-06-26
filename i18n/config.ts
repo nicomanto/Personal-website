@@ -12,6 +12,7 @@ import timelineEN from "./en/components/timeline.json";
 import whatIDoEN from "./en/components/whatIDo.json";
 import projectsListEN from "./en/components/projectsList.json";
 import projectsEN from "./en/pages/projects.json";
+import contactsEN from "./en/pages/contacts.json";
 import errorIT from "./it/pages/error.json";
 import formEmailIT from "./it/components/formEmail.json";
 import layoutIT from "./it/components/layout.json";
@@ -23,6 +24,7 @@ import timelineIT from "./it/components/timeline.json";
 import whatIDoIT from "./it/components/whatIDo.json";
 import projectsListIT from "./it/components/projectsList.json";
 import projectsIT from "./it/pages/projects.json";
+import contactsIT from "./it/pages/contacts.json";
 
 const resources = {
   en: {
@@ -37,6 +39,7 @@ const resources = {
     whatIDo: whatIDoEN,
     projectsList: projectsListEN,
     projects: projectsEN,
+    contacts: contactsEN,
   },
   it: {
     error: errorIT,
@@ -50,6 +53,7 @@ const resources = {
     whatIDo: whatIDoIT,
     projectsList: projectsListIT,
     projects: projectsIT,
+    contacts: contactsIT,
   },
 };
 

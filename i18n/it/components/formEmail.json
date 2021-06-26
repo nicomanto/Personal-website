@@ -1,6 +1,6 @@
 {
-    "formMessage": "Completa i campi per inviarmi un messaggio",
-    "formText": "I campi con * sono necessari",
+    "formMessage": "Se hai bisogno di contattarmi, compila la form sottostante. Ti risponderò al più presto.",
+    "formText": "Campo richiesto.",
     "formButtonName": "Invio",
     "name": {
         "label": "Nome"

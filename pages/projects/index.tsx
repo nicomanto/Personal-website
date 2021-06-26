@@ -34,6 +34,7 @@ const ProjectsPage = ({ buttonRole, projects }: Props) => {
     <Layout title={t("pageName")}>
       <div className="text-center my-4">
         <h1>{t("title")}</h1>
+        <h2>{t("subtitle")}</h2>
         <Container>
           <ButtonGroup toggle className="row my-4">
             {buttonRole.map((element, index) => {

@@ -1,6 +1,6 @@
 {
-    "formMessage": "Fill the form to contact me.",
-    "formText": "Fills with * are necessary.",
+    "formMessage": "If you need to contact me, fill the form below. I will get back to you as soon as possible.",
+    "formText": "Required field.",
     "formButtonName": "Send",
     "name": {
         "label": "Name"

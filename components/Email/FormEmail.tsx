@@ -1,6 +1,12 @@
 import React, { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { FormGroup, FormLabel, Form, FormControl, Button, FormText } from "react-bootstrap";
+import { Form, Button, Row, Col } from "react-bootstrap";
+import {
+  HiOutlineMail,
+  HiOutlineUser,
+  HiOutlineChatAlt,
+  HiOutlineEmojiHappy,
+} from "react-icons/hi";
 import ReCAPTCHA from "react-google-recaptcha";
 import { EmailInfo } from "../../interfaces/Email";
 
@@ -52,29 +58,50 @@ const FormEmail = () => {
           sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY!}
           ref={recaptchaRef}
         />
-        <p className="my-5">{t("formMessage")}</p>
-        <FormText>{t("formText")}</FormText>
-        <Form.Group controlId="formEmail">
+        <p className="my-5">
+          {t("formMessage")}
+          <HiOutlineEmojiHappy className="iconForm" title="Smile" />
+        </p>
 
-          <Form.Label>{`${t("name.label")}*`}</Form.Label>
-          <Form.Control type="text" placeholder="ex. Niccolò Mantovani" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
+        <Form.Group as={Row}>
+          <Col>
+            <HiOutlineUser className="iconForm" title="User" />
+            <Form.Label>{t("name.label")}</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="ex. Niccolò Mantovani"
+              required
+              id="nameValue"
+              name="nameValue"
+            />
+            <Form.Text className="text-muted">{t("formText")}</Form.Text>
+          </Col>
 
-          <Form.Label>{`${t("email.label")}*`}</Form.Label>
-          <Form.Control type="email" placeholder="ex. sample@email.com" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-
-          <Form.Label>{`${t("message.label")}*`}</Form.Label>
-          <Form.Control as="textarea" rows={3}/>
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-
+          <Col>
+            <HiOutlineMail className="iconForm" title="Email" />
+            <Form.Label>{t("email.label")}</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="ex. sample@email.com"
+              required
+              id="emailValue"
+              name="emailValue"
+            />
+            <Form.Text className="text-muted">{t("formText")}</Form.Text>
+          </Col>
         </Form.Group>
+        <Form.Group>
+          <HiOutlineChatAlt className="iconForm" title="Message" />
+          <Form.Label>{t("message.label")}</Form.Label>
+          <Form.Control as="textarea" rows={5} required id="messageValue" name="messageValue" />
+          <Form.Text className="text-muted">{t("formText")}</Form.Text>
+        </Form.Group>
+
+        <div className="text-center">
+          <Button type="submit" className="my-5 px-5" variant="dark">
+            {t("formButtonName")}
+          </Button>
+        </div>
       </Form>
     );
   }
