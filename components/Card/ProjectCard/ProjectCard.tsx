@@ -2,10 +2,10 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { IoBriefcaseOutline, IoSchoolOutline } from "react-icons/io5";
-import ProjectCardInterface from "../../../interfaces/Card/ProjectCard";
+import Project from "../../../interfaces/Project";
 
 type Props = {
-  projectElement: ProjectCardInterface;
+  projectElement: Project;
 };
 
 const ProjectCard = ({ projectElement }: Props) => {

@@ -1,10 +1,10 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import ProjectCard from "../../../interfaces/Card/ProjectCard";
+import Project from "../../../interfaces/Project";
 import ProjectCardElement from "./ProjectCard";
 
 type Props = {
-  projectList: ProjectCard[];
+  projectList: Project[];
 };
 
 const ProjectCardList = ({ projectList }: Props) => (

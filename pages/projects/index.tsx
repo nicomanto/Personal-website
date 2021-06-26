@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { ButtonGroup, Container, ToggleButton } from "react-bootstrap";
 import { GetStaticProps } from "next";
 import ProjectCardList from "../../components/Card/ProjectCard/ProjectCardList";
-import ProjectCard from "../../interfaces/Card/ProjectCard";
+import Project from "../../interfaces/Project";
 import Layout from "../../components/Layout";
 
 type Props = {
   buttonRole: string[];
-  projects: ProjectCard[];
+  projects: Project[];
 };
 
 const ProjectsPage = ({ buttonRole, projects }: Props) => {
@@ -72,7 +72,7 @@ export const getStaticProps: GetStaticProps = async () => {
     "Full-stack role",
   ];
 
-  const projects: ProjectCard[] = [
+  const projects: Project[] = [
     {
       i18nParam: "photoSite",
       imgName: "photo-site.png",

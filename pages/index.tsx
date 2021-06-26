@@ -9,9 +9,9 @@ import {
 import { BsCodeSlash, BsWindow } from "react-icons/bs";
 import { SiInstagram, SiGithub, SiLinkedin, SiFacebook, SiTelegram } from "react-icons/si";
 import Layout from "../components/Layout";
-import { Social, PersonalInfoForList } from "../interfaces/PersonalInfo/PersonalInfo";
+import { Social, PersonalInfoForList } from "../interfaces/PersonalInfo";
 import PersonalInfoID from "../components/PersonalInfo/PersonalInfoID";
-import WhatIDoCard from "../interfaces/Card/WhatIDoCard";
+import WhatIDo from "../interfaces/WhatIDo";
 import WhatIDoCardList from "../components/Card/WhatIDoCard/WhatIDoCardList";
 
 const getSocial = (): Social[] => {
@@ -62,8 +62,8 @@ const getPersonalInfoList = (): PersonalInfoForList[] => {
   return personalInfoList;
 };
 
-const getWhatIDoInfo = (): WhatIDoCard[] => {
-  const WhatIDoInfo: WhatIDoCard[] = [
+const getWhatIDoInfo = (): WhatIDo[] => {
+  const WhatIDoInfo: WhatIDo[] = [
     {
       i18nParam: "BE",
       icon: <IoServerOutline className="iconCard" />,

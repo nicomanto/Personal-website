@@ -1,4 +1,4 @@
-export default interface ProjectCard {
+export default interface Project {
   readonly i18nParam: string;
   readonly imgName: string;
   readonly projectGitHubURL: string;

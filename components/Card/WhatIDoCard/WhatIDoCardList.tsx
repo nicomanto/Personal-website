@@ -1,10 +1,10 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import WhatIDoCard from "../../../interfaces/Card/WhatIDoCard";
+import WhatIDo from "../../../interfaces/WhatIDo";
 import WhatIDoCardElement from "./WhatIDoCard";
 
 type Props = {
-  whatIDoList: WhatIDoCard[];
+  whatIDoList: WhatIDo[];
 };
 
 const WhatIDowhatIDoList = ({ whatIDoList }: Props) => (

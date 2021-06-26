@@ -1,10 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import WhatIDoCardInterface from "../../../interfaces/Card/WhatIDoCard";
+import WhatIDo from "../../../interfaces/WhatIDo";
 
 type Props = {
-  whatIDoElement: WhatIDoCardInterface;
+  whatIDoElement: WhatIDo;
 };
 
 const WhatIDoCard = ({ whatIDoElement }: Props) => {
