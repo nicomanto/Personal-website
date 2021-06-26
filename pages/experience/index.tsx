@@ -114,6 +114,7 @@ export const getStaticProps: GetStaticProps = async () => {
       },
       iconType: "education",
       i18nParam: "unipd",
+      websiteURL: "https://www.scienze.unipd.it/",
     },
     {
       date: {
@@ -122,6 +123,7 @@ export const getStaticProps: GetStaticProps = async () => {
       },
       iconType: "education",
       i18nParam: "itis",
+      websiteURL: "https://www.fermimn.edu.it/",
     },
   ];
 

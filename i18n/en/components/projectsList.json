@@ -1,6 +1,22 @@
 {
     "photoSite": {
-        "title": "Photo site",
-        "description": "Website for a photo model."
+        "title": "Photo Site",
+        "description": "Website for a photo model that offer the possibilty to show personal photo and personal informations."
+    },
+    "emporioLambda": {
+        "title": "EmporioLambda",
+        "description": "E-commerce website in Serverless style that used service from Amazon Web Services (AWS) and Next.js framework. Proposed by RedBabel."
+    },
+    "flyWeb": {
+        "title": "Fly Web",
+        "description": "Website where you can organize your travel. In this site you can choose a destination and next buy your plane ticket."
+    },
+    "oenology": {
+        "title": "Oenology",
+        "description": "Database that can be used by winery."
+    },
+    "quizRoom": {
+        "title": "QuizRoom",
+        "description": "Software where you can create quiz blocks and run them. Designed to be used in schools by both teachers and student."
     }
 }

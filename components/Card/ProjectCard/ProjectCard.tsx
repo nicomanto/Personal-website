@@ -1,13 +1,14 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { IoBriefcaseOutline, IoSchoolOutline } from "react-icons/io5";
 import ProjectCardInterface from "../../../interfaces/Card/ProjectCard";
 
 type Props = {
-  card: ProjectCardInterface;
+  projectElement: ProjectCardInterface;
 };
 
-const ProjectCard = ({ card }: Props) => {
+const ProjectCard = ({ projectElement }: Props) => {
   const { t } = useTranslation(["projectsList"]);
 
   return (
@@ -16,25 +17,30 @@ const ProjectCard = ({ card }: Props) => {
         <Card.Img
           variant="top"
           alt=""
-          src={`img/projects/${card.imgName}`}
+          src={`img/projects/${projectElement.imgName}`}
           className="projectImg mb-4"
         />
-        <Card.Title>{t(`${card.i18nParam}.title`)}</Card.Title>
-        <Card.Text>{t(`${card.i18nParam}.description`)}</Card.Text>
+        {projectElement.iconType === "academic" ? (
+          <IoSchoolOutline title="academic" className="iconProjectRole" />
+        ) : (
+          <IoBriefcaseOutline title="work" className="iconProjectRole" />
+        )}
+        <Card.Title>{t(`${projectElement.i18nParam}.title`)}</Card.Title>
+        <Card.Text className="mx-4">{t(`${projectElement.i18nParam}.description`)}</Card.Text>
         <Card.Link
           target="_blank"
           rel="noopener"
-          href={card.projectGitHubURL}
+          href={projectElement.projectGitHubURL}
           title="GitHub repository"
           lang="en"
         >
           GitHub repository
         </Card.Link>
-        {card.projectWebisteURL !== undefined ? (
+        {projectElement.projectWebisteURL !== undefined ? (
           <Card.Link
             target="_blank"
             rel="noopener"
-            href={card.projectWebisteURL}
+            href={projectElement.projectWebisteURL}
             title="Website's project"
             lang="en"
           >

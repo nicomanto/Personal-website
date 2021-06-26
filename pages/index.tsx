@@ -94,7 +94,7 @@ const IndexPage = () => {
           <p>{t("biography")}</p>
 
           <h2>{t("subtitle")}</h2>
-          <WhatIDoCardList cardList={getWhatIDoInfo()} />
+          <WhatIDoCardList whatIDoList={getWhatIDoInfo()} />
         </Col>
       </Row>
     </Layout>

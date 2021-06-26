@@ -1,4 +1,18 @@
 {
     "pageName": "Progetti | Niccolò Mantovani",
-    "title": "Progetti lavorativi o universitari"
+    "title": "Progetti lavorativi o universitari",
+    "button":[
+        {
+            "name": "Tutti i progetti"
+        },
+        {
+            "name": "Ruolo back-end"
+        },
+        {
+            "name": "Ruolo front-end"
+        },
+        {
+            "name": "Ruolo full-stack"
+        }
+    ]
 }

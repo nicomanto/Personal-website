@@ -6,72 +6,27 @@ import ProjectCardList from "../../components/Card/ProjectCard/ProjectCardList";
 import ProjectCard from "../../interfaces/Card/ProjectCard";
 import Layout from "../../components/Layout";
 
-const getProjectsInfo = (): ProjectCard[] => {
-  const projects: ProjectCard[] = [
-    {
-      i18nParam: "PhotoSite",
-      imgName: "photo-site.png",
-      projectGitHubURL: "https://github.com/nicomanto/Photo-site",
-      projectWebisteURL: "https://photo-site-nicomanto.vercel.app/",
-      haveBERole: true,
-      haveFERole: true,
-    },
-    {
-      i18nParam: "EmporioLambda",
-      imgName: "emporio-lambda.png",
-      projectGitHubURL: "https://github.com/nicomanto/EmporioLambda",
-      projectWebisteURL: "https://emporio-lambda-fe.vercel.app/",
-      haveBERole: true,
-      haveFERole: false,
-    },
-    {
-      i18nParam: "FlyWeb",
-      imgName: "FlyWebLogo.png",
-      projectGitHubURL: "https://github.com/nicomanto/FlyWeb",
-      haveBERole: true,
-      haveFERole: false,
-    },
-    {
-      i18nParam: "Oenology",
-      imgName: "oenology.png",
-      projectGitHubURL: "https://github.com/nicomanto/Oenology",
-      haveBERole: true,
-      haveFERole: false,
-    },
-    {
-      i18nParam: "QuizRoom",
-      imgName: "quiz-room.png",
-      projectGitHubURL: "https://github.com/nicomanto/QuizRoom",
-      haveBERole: true,
-      haveFERole: true,
-    },
-  ];
-
-  return projects;
-};
-
 type Props = {
   buttonRole: string[];
+  projects: ProjectCard[];
 };
 
-const ProjectsPage = ({ buttonRole }: Props) => {
+const ProjectsPage = ({ buttonRole, projects }: Props) => {
   const { t } = useTranslation(["projects"]);
   const [topicProjects, setTopicProjects] = useState(buttonRole[0]);
-  const [projectsList, setProjectsList] = useState(getProjectsInfo());
+  const [projectsList, setProjectsList] = useState(projects);
 
   const handleSelect = (e) => {
     setTopicProjects(e);
 
     if (e === "All projects") {
-      setProjectsList(getProjectsInfo());
+      setProjectsList(projects);
     } else if (e === "Back-end role") {
-      setProjectsList(getProjectsInfo().filter((element) => element.haveBERole));
+      setProjectsList(projects.filter((element) => element.haveBERole));
     } else if (e === "Front-end role") {
-      setProjectsList(getProjectsInfo().filter((element) => element.haveFERole));
+      setProjectsList(projects.filter((element) => element.haveFERole));
     } else {
-      setProjectsList(
-        getProjectsInfo().filter((element) => element.haveBERole && element.haveFERole)
-      );
+      setProjectsList(projects.filter((element) => element.haveFERole && element.haveBERole));
     }
   };
 
@@ -80,8 +35,8 @@ const ProjectsPage = ({ buttonRole }: Props) => {
       <div className="text-center my-4">
         <h1>{t("title")}</h1>
         <Container>
-          <ButtonGroup toggle className="row">
-            {buttonRole.map((element) => {
+          <ButtonGroup toggle className="row my-4">
+            {buttonRole.map((element, index) => {
               return (
                 <ToggleButton
                   className="projectRadio"
@@ -96,30 +51,76 @@ const ProjectsPage = ({ buttonRole }: Props) => {
                     handleSelect(element);
                   }}
                 >
-                  {element}
+                  {t(`button.${index}.name`)}
                 </ToggleButton>
               );
             })}
           </ButtonGroup>
         </Container>
 
-        <ProjectCardList cardList={projectsList} />
+        <ProjectCardList projectList={projectsList} />
       </div>
     </Layout>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const buttonRole = [
+  const buttonRole: String[] = [
     "All projects", // the first must be the default button
     "Back-end role",
     "Front-end role",
     "Full-stack role",
   ];
 
+  const projects: ProjectCard[] = [
+    {
+      i18nParam: "photoSite",
+      imgName: "photo-site.png",
+      projectGitHubURL: "https://github.com/nicomanto/Photo-site",
+      projectWebisteURL: "https://photo-site-nicomanto.vercel.app/",
+      haveBERole: true,
+      haveFERole: true,
+      iconType: "work",
+    },
+    {
+      i18nParam: "emporioLambda",
+      imgName: "emporio-lambda.png",
+      projectGitHubURL: "https://github.com/nicomanto/EmporioLambda",
+      projectWebisteURL: "https://emporio-lambda-fe.vercel.app/",
+      haveBERole: true,
+      haveFERole: false,
+      iconType: "academic",
+    },
+    {
+      i18nParam: "flyWeb",
+      imgName: "FlyWebLogo.png",
+      projectGitHubURL: "https://github.com/nicomanto/FlyWeb",
+      haveBERole: true,
+      haveFERole: false,
+      iconType: "academic",
+    },
+    {
+      i18nParam: "oenology",
+      imgName: "oenology.png",
+      projectGitHubURL: "https://github.com/nicomanto/Oenology",
+      haveBERole: true,
+      haveFERole: false,
+      iconType: "academic",
+    },
+    {
+      i18nParam: "quizRoom",
+      imgName: "quiz-room.png",
+      projectGitHubURL: "https://github.com/nicomanto/QuizRoom",
+      haveBERole: true,
+      haveFERole: true,
+      iconType: "academic",
+    },
+  ];
+
   return {
     props: {
       buttonRole,
+      projects,
     },
   };
 };

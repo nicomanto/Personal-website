@@ -5,4 +5,5 @@ export default interface ProjectCard {
   readonly projectWebisteURL?: string;
   readonly haveBERole: boolean;
   readonly haveFERole: boolean;
+  readonly iconType: string;
 }

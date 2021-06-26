@@ -4,19 +4,19 @@ import WhatIDoCard from "../../../interfaces/Card/WhatIDoCard";
 import WhatIDoCardElement from "./WhatIDoCard";
 
 type Props = {
-  cardList: WhatIDoCard[];
+  whatIDoList: WhatIDoCard[];
 };
 
-const WhatIDoCardList = ({ cardList }: Props) => (
+const WhatIDowhatIDoList = ({ whatIDoList }: Props) => (
   <Row>
-    {cardList.map((element) => {
+    {whatIDoList.map((element) => {
       return (
         <Col>
-          <WhatIDoCardElement card={element} />
+          <WhatIDoCardElement whatIDoElement={element} />
         </Col>
       );
     })}
   </Row>
 );
 
-export default WhatIDoCardList;
+export default WhatIDowhatIDoList;

@@ -4,15 +4,15 @@ import ProjectCard from "../../../interfaces/Card/ProjectCard";
 import ProjectCardElement from "./ProjectCard";
 
 type Props = {
-  cardList: ProjectCard[];
+  projectList: ProjectCard[];
 };
 
-const ProjectCardList = ({ cardList }: Props) => (
+const ProjectCardList = ({ projectList }: Props) => (
   <Row>
-    {cardList.map((element) => {
+    {projectList.map((element) => {
       return (
         <Col lg={6}>
-          <ProjectCardElement card={element} />
+          <ProjectCardElement projectElement={element} />
         </Col>
       );
     })}
