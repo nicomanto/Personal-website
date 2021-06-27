@@ -89,7 +89,7 @@ const IndexPage = () => {
         <Col lg={4} className="text-center my-auto">
           <PersonalInfoID socialList={getSocial()} personalInfoList={getPersonalInfoList()} />
         </Col>
-        <Col lg className="biographyIndex my-4">
+        <Col lg className="biographyIndex">
           <h1>{t("title")}</h1>
           <p>{t("biography")}</p>
 
