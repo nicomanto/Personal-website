@@ -3,10 +3,6 @@
   margin: 0 10% 0 10%;
 }
 
-.simpleLink{
-  text-decoration: none;
-}
-
 /*Navbar*/
 .navbar{
   padding-left: 10%;
@@ -84,8 +80,6 @@
 
 /*index page*/
 
-
-
 .biographyIndex{
   max-height: 80vh;
   overflow-y: hidden;
@@ -106,6 +100,12 @@
 
 
 /*time line*/
+
+.linkTimeLineElement{
+  color: white;
+  text-decoration: underline;
+  width: fit-content;
+}
 
 .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content, .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-icon{
   background: #6c757d;
@@ -179,17 +179,28 @@
 }
 
 
-/*contact page*/
+/*map*/
 .map{
   height: 60vh;
   border-radius: 15px;
-  margin: 0 10px 0 0;
 }
 
+
+/*form*/
 .iconForm{
   width:20px;
   height: 20px;
   margin: 0 5px 5px 0;
+}
+
+.infoMessage{
+  margin: 25vh 0 25vh 0;
+}
+
+.iconAfterSending{
+  width:30px;
+  height: 30px;
+  margin-bottom: 5px
 }
 
 

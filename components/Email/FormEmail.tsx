@@ -1,13 +1,16 @@
 import React, { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Spinner } from "react-bootstrap";
 import {
   HiOutlineMail,
   HiOutlineUser,
   HiOutlineChatAlt,
   HiOutlineEmojiHappy,
+  HiOutlineCheckCircle,
+  HiOutlineExclamationCircle,
 } from "react-icons/hi";
 import ReCAPTCHA from "react-google-recaptcha";
+import { IconBaseProps } from "react-icons";
 import { EmailInfo } from "../../interfaces/Email";
 
 const FormEmail = () => {
@@ -64,7 +67,7 @@ const FormEmail = () => {
         </p>
 
         <Form.Group as={Row}>
-          <Col>
+          <Col lg>
             <HiOutlineUser className="iconForm" title="User" />
             <Form.Label>{t("name.label")}</Form.Label>
             <Form.Control
@@ -77,7 +80,7 @@ const FormEmail = () => {
             <Form.Text className="text-muted">{t("formText")}</Form.Text>
           </Col>
 
-          <Col>
+          <Col lg>
             <HiOutlineMail className="iconForm" title="Email" />
             <Form.Label>{t("email.label")}</Form.Label>
             <Form.Control
@@ -93,12 +96,12 @@ const FormEmail = () => {
         <Form.Group>
           <HiOutlineChatAlt className="iconForm" title="Message" />
           <Form.Label>{t("message.label")}</Form.Label>
-          <Form.Control as="textarea" rows={5} required id="messageValue" name="messageValue" />
+          <Form.Control as="textarea" rows={6} required id="messageValue" name="messageValue" />
           <Form.Text className="text-muted">{t("formText")}</Form.Text>
         </Form.Group>
 
         <div className="text-center">
-          <Button type="submit" className="my-5 px-5" variant="dark">
+          <Button type="submit" className="my-3 px-5" variant="dark">
             {t("formButtonName")}
           </Button>
         </div>
@@ -107,22 +110,31 @@ const FormEmail = () => {
   }
   if (loading) {
     return (
-      <div className="spinner-border text-light my-5" role="status">
-        <span className="sr-only">{t("sendEmail.loadingSR")}</span>
+      <div className="text-center infoMessage">
+        <Spinner animation="border" role="status">
+          <span className="sr-only">{t("sendEmail.loadingSR")}</span>
+        </Spinner>
       </div>
     );
   }
 
   let classMessage: string = "text-success";
   let message: string = t("sendEmail.successSend");
+  let icon: IconBaseProps = (
+    <HiOutlineCheckCircle className="iconAfterSending" title="Success sending email icon" />
+  );
 
   if (failed) {
     classMessage = "text-danger";
     message = t("sendEmail.failedSend");
+    icon = (
+      <HiOutlineExclamationCircle className="iconAfterSending" title="Error sending email icon" />
+    );
   }
 
   return (
-    <div className="my-5">
+    <div className="text-center infoMessage">
+      {icon}
       <p className={classMessage}>{message}</p>
 
       <a href="/" className="simpleLink" title="Home">

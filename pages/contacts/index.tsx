@@ -21,11 +21,13 @@ const ContactPage = ({ worksLocation }: Props) => {
       </div>
 
       <Row>
-        <Col lg="5">
-          <Map mapOptions={worksLocation} />
-        </Col>
         <Col lg>
+          <h2 lang="en">Form</h2>
           <FormEmail />
+        </Col>
+        <Col lg="5">
+          <h2>{t("subtitleMap")}</h2>
+          <Map mapOptions={worksLocation} />
         </Col>
       </Row>
     </Layout>
