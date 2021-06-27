@@ -12,7 +12,7 @@ const ProjectCard = ({ projectElement }: Props) => {
   const { t } = useTranslation(["projectsList"]);
 
   return (
-    <Card className="projectCard mx-auto my-2">
+    <Card className="mx-auto my-2">
       <Card.Body>
         <Card.Img
           variant="top"

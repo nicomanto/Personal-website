@@ -227,6 +227,7 @@
   /*remove scroll bar into mobile view*/
   .biographyIndex{
     max-height: none;
+    margin-top: 30px;
   }
 
   .biographyIndex:hover{
