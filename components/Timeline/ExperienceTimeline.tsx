@@ -34,7 +34,7 @@ const ExperienceTimeline = ({ timeLineElementList }: Props) => {
             <p>{t(`${element.i18nParam}.description`)}</p>
             <a
               lang="en"
-              className="d-block text-light my-1"
+              className="d-block linkTimeLineElement my-1"
               target="_blank"
               rel="noopener noreferrer"
               title="website"
