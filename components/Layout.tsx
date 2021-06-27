@@ -40,7 +40,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
         </Head>
       <header>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand className="navLinkBrand" href="#logo" lang="it"><Image src="/img/logo.svg" alt="Lettera N di colore nero" width="64" height="64" /></Navbar.Brand>
+        <Navbar.Brand className="navLinkBrand" href="#logo" lang="it"><Image src="/img/logo.svg" alt="Lettera N di colore nero" width="50" height="50" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav"/>
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
@@ -59,16 +59,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
             {" "}
             &copy; 2021
             {" "}
-            <a
-              lang="it"
-              className="simpleLink text-dark"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Niccolò Mantovani site"
-              href="https://nicomanto.github.io/About-me"
-            >
-              {"Niccolò Mantovani"}
-            </a>
+            {"Niccolò Mantovani"}
           </p>
 
           <Button variant="outline-dark" onClick={() => {changeLanguage("it");}} size="sm">IT</Button>
