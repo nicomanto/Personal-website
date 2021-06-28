@@ -249,11 +249,14 @@
     overflow-y: hidden;
   }
 
+  /*remove fixed height for project card*/
+
   .projectCard{
     min-height: auto;
     max-height: auto;
   }
 
+  /*reduce map height*/
   .map{
     height: 65vh;
   }
