@@ -5,7 +5,7 @@ const Page404 = () => {
   const { t } = useTranslation(["error"]);
 
   return (
-    <div className="mx-4 errorMessage">
+    <div className="errorMessage">
       <h1>
         {`404 | ${t("404.errorMessage")} `}
         <RiEmotionSadLine title="Sad emoticon" />

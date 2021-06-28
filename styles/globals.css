@@ -178,6 +178,13 @@
   height: 35px;
 }
 
+/*project card*/
+
+.projectCard{
+  max-height: 580px;
+  min-height: 580px;
+}
+
 
 /*map*/
 .map{
@@ -206,8 +213,8 @@
 /*Error page*/
 
 .errorMessage{
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin: 25vh 30px 25vh 30px;
+  text-align: center;
   text-align: center;
 }
 
@@ -240,6 +247,11 @@
 
   .biographyIndex:hover{
     overflow-y: hidden;
+  }
+
+  .projectCard{
+    min-height: auto;
+    max-height: auto;
   }
 
   
