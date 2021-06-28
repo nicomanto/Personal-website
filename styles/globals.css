@@ -203,6 +203,14 @@
   margin-bottom: 5px
 }
 
+/*Error page*/
+
+.errorMessage{
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  text-align: center;
+}
+
 
 
 @media (max-width: 992px)
