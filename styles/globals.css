@@ -1,0 +1,238 @@
+/*general layout*/
+.principalContent{
+  margin: 0 10% 0 10%;
+}
+
+/*Navbar*/
+.navbar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navLink:hover{
+  text-decoration: none;
+}
+
+.navLink{
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  position: relative;
+}
+
+.navLink:after{    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: grey;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navLink:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar-toggler {
+    border: none;
+    margin-top: 0.3rem
+}
+
+
+
+
+/*personal info component*/
+
+.profilePicture{
+  width:50%;
+  min-width: 200px;
+  border-radius: 20%;
+}
+
+.socialIconLink{
+  text-decoration: none;
+  color: #212529;
+}
+
+.socialIconLink:hover{
+  opacity:50%;
+  color: #212529;
+}
+
+.badgeSD{
+  font-size: 100%;
+}
+
+.nameTitle{
+  font-size: 2.5em;
+}
+
+.iconInfo{
+  width: 20px;
+  height: 20px;
+}
+
+
+/*index page*/
+
+.biographyIndex{
+  max-height: 80vh;
+  overflow-y: hidden;
+}
+
+.biographyIndex:hover{
+  overflow-y: scroll;
+}
+
+.biographyIndex::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+.biographyIndex::-webkit-scrollbar-thumb {
+  background-color: gainsboro;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+
+/*time line*/
+
+.linkTimeLineElement{
+  color: white;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content, .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-icon{
+  background: #6c757d;
+  color: white;
+}
+
+.vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content-arrow{
+  border-right: 7px solid #6c757d;
+}
+
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-content, .vertical-timeline-element:nth-child(even) .vertical-timeline-element-icon{
+  background: #212529;
+  color: white;
+}
+
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-content-arrow{
+  border-right: 7px solid #212529;
+}
+
+
+.vertical-timeline::before{
+  background-color:gainsboro !important
+}
+
+
+@media only screen and (min-width: 1170px){
+  .vertical-timeline-element-date{
+    color:black !important
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .vertical-timeline-element-date{
+    color:white
+  }
+}
+
+
+/*WhatIDo card component*/
+.whatIDoCard{
+  text-align: center;
+  max-width: 450px;
+  min-width: 250px;
+}
+.iconCard{
+  align-self: center;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+/*project page*/
+
+.projectRadio{
+  width: 150px;
+}
+
+.projectImg{
+  width: 100%;
+  height: 300px;
+  object-fit:scale-down;
+}
+
+.iconProjectRole{
+  align-self: center;
+  margin-bottom: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+
+/*map*/
+.map{
+  height: 60vh;
+  border-radius: 15px;
+}
+
+
+/*form*/
+.iconForm{
+  width:20px;
+  height: 20px;
+  margin: 0 5px 5px 0;
+}
+
+.infoMessage{
+  margin: 25vh 0 25vh 0;
+}
+
+.iconAfterSending{
+  width:30px;
+  height: 30px;
+  margin-bottom: 5px
+}
+
+
+
+@media (max-width: 992px)
+{
+  /*Set navbar propeties for mobile menu*/
+  .navLink:after{
+    transition: none;
+    background: none;
+  }
+
+  .navLink:hover{
+    color:rgb(122, 122, 122)
+    
+  }
+
+  .navbar{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  /*remove scroll bar into mobile view*/
+  .biographyIndex{
+    max-height: none;
+    margin-top: 30px;
+  }
+
+  .biographyIndex:hover{
+    overflow-y: hidden;
+  }
+
+  
+}

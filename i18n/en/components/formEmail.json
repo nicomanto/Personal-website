@@ -1,0 +1,20 @@
+{
+    "formMessage": "If you need to contact me, fill the form below. I will get back to you as soon as possible.",
+    "formText": "Required field.",
+    "formButtonName": "Send",
+    "name": {
+        "label": "Name"
+    },
+    "email": {
+        "label": "Email"
+    },
+    "message": {
+        "label": "Message"
+    },
+    "sendEmail":{
+        "loadingSR": "Loading...",
+        "successSend": "Email successfully sent, wait for a response.",
+        "failedSend": "Sending the email failed, retry later.",
+        "buttonBack": "Back to the home page"
+    }
+}

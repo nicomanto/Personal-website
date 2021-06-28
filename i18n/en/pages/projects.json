@@ -1,0 +1,19 @@
+{
+    "pageName": "Projects | Niccolò Mantovani",
+    "title": "Projects",
+    "subtitle": "Work or university",
+    "button":[
+        {
+            "name": "All projects"
+        },
+        {
+            "name": "Back-end role"
+        },
+        {
+            "name": "Front-end role"
+        },
+        {
+            "name": "Full-stack role"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "photoSite": {
+        "title": "Photo Site",
+        "description": "Sito web per modella fotografica dove si possono visualizzare le informazioni principali, i contatti e le foto effettuate da essa."
+    },
+    "emporioLambda": {
+        "title": "EmporioLambda",
+        "description": "Sito di E-commerce in stile Serverless style sviluppato tramite i servizi Amazon Web Services (AWS) e il framework Next.js. Proposto da RedBabel."
+    },
+    "flyWeb": {
+        "title": "Fly Web",
+        "description": "Sito web che permette l'intera gestione di una prenotazione di un viaggio, dalla ricerca all'acquisto."
+    },
+    "oenology": {
+        "title": "Oenology",
+        "description": "Database che può essere usato da un'azienda vinicola."
+    },
+    "quizRoom": {
+        "title": "QuizRoom",
+        "description": "Software dove è possibile creare blocchi di quiz ed eseguirli. Pensato per essere usato in ambito scolastico sia dai docenti che dagli alunni."
+    }
+}

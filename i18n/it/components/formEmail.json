@@ -1,0 +1,20 @@
+{
+    "formMessage": "Se hai bisogno di contattarmi, compila la form sottostante. Ti risponderò al più presto.",
+    "formText": "Campo richiesto.",
+    "formButtonName": "Invio",
+    "name": {
+        "label": "Nome"
+    },
+    "email": {
+        "label": "Email"
+    },
+    "message": {
+        "label": "Messaggio"
+    },
+    "sendEmail":{
+        "loadingSR": "Caricamento...",
+        "successSend": "Email inviata correttamente, attendi una risposta",
+        "failedSend": "Invio dell'email fallito, riprova più tardi",
+        "buttonBack": "Ritorna all'home page"
+    }
+}

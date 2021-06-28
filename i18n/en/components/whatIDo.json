@@ -1,0 +1,14 @@
+{
+    "BE":{
+        "title": "Back-end Developer",
+        "description": "Development of professional Back-end softwares."
+    },
+    "FE":{
+        "title": "Front-end Developer",
+        "description": "Development of professional Front-end softwares."
+    },
+    "WEB":{
+        "title": "Web Developer",
+        "description": "Development of professional and responsive web applications."
+    }
+}
