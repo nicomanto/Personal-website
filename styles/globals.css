@@ -254,5 +254,9 @@
     max-height: auto;
   }
 
+  .map{
+    height: 65vh;
+  }
+
   
 }
