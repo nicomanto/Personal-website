@@ -61,7 +61,7 @@ const FormEmail = () => {
           sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY!}
           ref={recaptchaRef}
         />
-        <p className="my-5">
+        <p>
           {t("formMessage")}
           <HiOutlineEmojiHappy className="iconForm" title="Smile" />
         </p>
@@ -96,7 +96,7 @@ const FormEmail = () => {
         <Form.Group>
           <HiOutlineChatAlt className="iconForm" title="Message" />
           <Form.Label>{t("message.label")}</Form.Label>
-          <Form.Control as="textarea" rows={6} required id="messageValue" name="messageValue" />
+          <Form.Control as="textarea" rows={8} required id="messageValue" name="messageValue" />
           <Form.Text className="text-muted">{t("formText")}</Form.Text>
         </Form.Group>
 

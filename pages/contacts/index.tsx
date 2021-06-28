@@ -36,7 +36,7 @@ const ContactPage = ({ worksLocation }: Props) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const mapOptions: google.maps.MapOptions = {
-    zoom: 9,
+    zoom: 8,
     center: {
       lat: 45.18850908719348,
       lng: 11.26573010072715,
@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps = async () => {
       title: "Mantova",
     },
     {
-      position: { lat: 45.41021406053265, lng: 11.880835139668408 },
+      position: { lat: 45.406424067366345, lng: 11.876757235065849 },
       title: "Padova",
     },
   ];
