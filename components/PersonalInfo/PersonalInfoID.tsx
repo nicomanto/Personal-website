@@ -1,14 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Badge, Button, ListGroup } from "react-bootstrap";
-import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo";
-import {
-  IoCalendarSharp,
-  IoLanguageSharp,
-  IoLocationSharp,
-} from "react-icons/io5";
+import { IoCalendarSharp, IoLanguageSharp, IoLocationSharp } from "react-icons/io5";
 import { SiInstagram, SiGithub, SiLinkedin, SiFacebook, SiTelegram } from "react-icons/si";
-
+import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo";
 
 const getSocial = (): Social[] => {
   const socialList: Social[] = [
@@ -83,7 +78,7 @@ const PersonalInfoID = () => {
                 href={element.url}
                 className="socialIconLink"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 {element.icon}
               </a>

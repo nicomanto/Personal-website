@@ -11,7 +11,7 @@ const IndexPage = () => {
     <Layout title="Home | Niccolò Mantovani">
       <Row className="my-4">
         <Col lg={4} className="text-center my-auto">
-          <PersonalInfoID/>
+          <PersonalInfoID />
         </Col>
         <Col lg className="biographyIndex">
           <h1>{t("title")}</h1>
@@ -22,7 +22,7 @@ const IndexPage = () => {
           </p>
 
           <h2>{t("subtitle")}</h2>
-          <WhatIDoCardList/>
+          <WhatIDoCardList />
         </Col>
       </Row>
     </Layout>

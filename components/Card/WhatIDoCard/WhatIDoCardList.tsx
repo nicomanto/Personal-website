@@ -1,9 +1,9 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import { IoServerOutline } from "react-icons/io5";
+import { BsCodeSlash, BsWindow } from "react-icons/bs";
 import WhatIDo from "../../../interfaces/WhatIDo";
 import WhatIDoCardElement from "./WhatIDoCard";
-import {IoServerOutline} from "react-icons/io5";
-import { BsCodeSlash, BsWindow } from "react-icons/bs";
 
 const getWhatIDoInfo = (): WhatIDo[] => {
   const WhatIDoInfo: WhatIDo[] = [
