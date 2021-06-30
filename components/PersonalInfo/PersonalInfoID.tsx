@@ -2,17 +2,67 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Badge, Button, ListGroup } from "react-bootstrap";
 import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo";
+import {
+  IoCalendarSharp,
+  IoLanguageSharp,
+  IoLocationSharp,
+} from "react-icons/io5";
+import { SiInstagram, SiGithub, SiLinkedin, SiFacebook, SiTelegram } from "react-icons/si";
 
-type Props = {
-  socialList: Social[];
-  personalInfoList: PersonalInfoForList[];
+
+const getSocial = (): Social[] => {
+  const socialList: Social[] = [
+    {
+      icon: <SiGithub className="iconInfo" title="GitHub Niccolò Mantovani" />,
+      url: "https://github.com/nicomanto",
+    },
+    {
+      icon: <SiLinkedin className="iconInfo" title="LinkedIn Niccolò Mantovani" />,
+      url: "/",
+    },
+    {
+      icon: <SiTelegram className="iconInfo" title="Telegram Niccolò Mantovani" />,
+      url: "https://t.me/nicomanto",
+    },
+    {
+      icon: <SiInstagram className="iconInfo" title="Instagram Niccolò Mantovani" />,
+      url: "https://www.instagram.com/niccolo_mantovani",
+    },
+    {
+      icon: <SiFacebook className="iconInfo" title="Facebook Niccolò Mantovani" />,
+      url: "https://www.facebook.com/nicomanto49",
+    },
+  ];
+
+  return socialList;
 };
 
-const PersonalInfoID = ({ socialList, personalInfoList }: Props) => {
+const getPersonalInfoList = (): PersonalInfoForList[] => {
+  const personalInfoList: PersonalInfoForList[] = [
+    {
+      title: "Birthday",
+      icon: <IoCalendarSharp className="iconInfo mb-1" />,
+      i18nParam: "birthday",
+    },
+    {
+      title: "Works location",
+      icon: <IoLocationSharp className="iconInfo mb-1" />,
+      i18nParam: "location",
+    },
+    {
+      title: "Language",
+      icon: <IoLanguageSharp className="iconInfo mb-1" />,
+      i18nParam: "language",
+    },
+  ];
+  return personalInfoList;
+};
+
+const PersonalInfoID = () => {
   const { t } = useTranslation(["personalInfo"]);
 
   return (
-    <div id="personalInfo">
+    <div>
       <img
         className="profilePicture"
         src="https://www.gravatar.com/avatar/cceb51c1797bca97b7cd5211907dd744?s=1000"
@@ -26,14 +76,14 @@ const PersonalInfoID = ({ socialList, personalInfoList }: Props) => {
       </Badge>
 
       <ul className="list-inline mx-auto justify-content-center my-2">
-        {socialList.map((element) => {
+        {getSocial().map((element) => {
           return (
             <li className="list-inline-item mx-2">
               <a
                 href={element.url}
                 className="socialIconLink"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
               >
                 {element.icon}
               </a>
@@ -43,7 +93,7 @@ const PersonalInfoID = ({ socialList, personalInfoList }: Props) => {
       </ul>
 
       <ListGroup variant="flush" className="my-4">
-        {personalInfoList.map((element) => {
+        {getPersonalInfoList().map((element) => {
           return (
             <ListGroup.Item title={element.title}>
               {element.icon}
