@@ -55,7 +55,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
       {children}
       </main>
       <footer className="text-center my-4">
-          <p>
+          <p lang="it">
             {" "}
             &copy; 2021
             {" "}
