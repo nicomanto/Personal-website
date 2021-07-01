@@ -40,7 +40,8 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
         </Head>
       <header>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand className="navLinkBrand" href="#logo" lang="it"><Image src="/img/logo.svg" alt="Lettera N di colore nero" width="50" height="50" /></Navbar.Brand>
+        {/*not user <Image> tag for validation html*/}
+        <Navbar.Brand className="navLinkBrand" href="#logo" lang="it"><img src="/img/logo.svg" alt="Lettera N di colore nero" width="50" height="50" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav"/>
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">

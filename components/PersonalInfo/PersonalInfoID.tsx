@@ -1,8 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Badge, Button, ListGroup } from "react-bootstrap";
+import { Badge, ListGroup } from "react-bootstrap";
 import { IoCalendarSharp, IoLanguageSharp, IoLocationSharp } from "react-icons/io5";
 import { SiInstagram, SiGithub, SiLinkedin, SiFacebook, SiTelegram } from "react-icons/si";
+import { HiOutlineDownload } from "react-icons/hi";
 import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo";
 
 const getSocial = (): Social[] => {
@@ -98,13 +99,19 @@ const PersonalInfoID = () => {
         })}
       </ListGroup>
 
-      <a href="/CV/CV-Mantovani Niccolò-IT.pdf" download>
-        <Button title="Download Curriculm Vitae" lang="en" variant="dark">
-          {"Download "}
-          <abbr lang="la" title="Curriculum Vitae">
-            CV
-          </abbr>
-        </Button>
+      {/* not use <Button> because not support download tag */}
+      <a
+        href="/CV/CV-Mantovani-Niccolò-IT.pdf"
+        title="Download Curriculm Vitae"
+        className="btn btn-dark"
+        role="button"
+        download
+      >
+        <HiOutlineDownload className="iconInfo mr-1" />
+        {"Download "}
+        <abbr lang="la" title="Curriculum Vitae">
+          CV
+        </abbr>
       </a>
     </div>
   );

@@ -45,8 +45,8 @@ const ProjectsPage = ({ buttonRole, projects }: Props) => {
                   checked={topicProjects === element}
                   key={element}
                   type="radio"
-                  name={`optionsRadios${element}`}
-                  id={`optionsRadios${element}`}
+                  name={`optionsRadios${element.replace(/\s/g, "")}`}
+                  id={`optionsRadios${element.replace(/\s/g, "")}`}
                   value={element}
                   onChange={() => {
                     handleSelect(element);
