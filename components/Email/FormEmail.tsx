@@ -85,7 +85,7 @@ const FormEmail = () => {
             <Form.Label>{t("email.label")}</Form.Label>
             <Form.Control
               type="email"
-              placeholder="ex. sample@email.com"
+              placeholder="ex. niccolo@email.com"
               required
               id="emailValue"
               name="emailValue"
@@ -137,7 +137,7 @@ const FormEmail = () => {
       {icon}
       <p className={classMessage}>{message}</p>
 
-      <a href="/" className="simpleLink" title="Home">
+      <a href="/" title="Home">
         {t("sendEmail.buttonBack")}
       </a>
     </div>
