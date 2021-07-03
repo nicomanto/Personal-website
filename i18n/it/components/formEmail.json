@@ -15,7 +15,7 @@
         "sendingSR": "Invio...",
         "successSend": "Email inviata correttamente, attendi una risposta",
         "generalFailedSend": "Invio dell'email fallito, riprova più tardi",
-        "fillFailedSend": "È necessario compilare tutti i campi",
+        "fillFailedSend": "È necessario compilare tutti i campi richiesti",
         "buttonBack": "Ritorna all'home page"
     }
 }
