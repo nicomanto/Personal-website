@@ -1,0 +1,47 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}        % Codifica dei font
+\usepackage[utf8]{inputenc}    % Lettere accentate da tastiera
+\usepackage[english,italian]{babel}     % Lingua del documento
+\usepackage[margin=0.8in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\hypersetup{   
+    colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=blue
+}
+
+\begin{document}
+	\title{
+	
+		\hspace{5mm}
+		\begin{minipage}[b]{0.4\textwidth}
+			Mantovani Niccolò \\
+			\large Curriculum vitae
+		\end{minipage}
+		\hfill
+		\hfill
+		\begin{minipage}[b]{0.4\textwidth}
+			\includegraphics[width=0.9in]{src/img/foto_formato_tessera.jpg}     
+		\end{minipage}
+
+		\vspace{5mm}
+		}
+	\date{}
+	\maketitle
+	
+	\input{src/informazioni_personali}
+	\vspace{1mm}
+	\input{src/titolo_di_studio}
+	\vspace{1mm}
+	\input{src/esperienza_professionale}
+	\newpage
+	\input{src/istruzione_e_formazione}
+	\vspace{1mm}
+	\input{src/competenze_personali}
+	\vspace{1mm}
+	\input{src/interessi_e_obiettivi}
+\end{document}
