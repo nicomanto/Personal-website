@@ -17,7 +17,7 @@ const FormEmail = () => {
 
   // state of submitted email
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
 
   // state of value in form
@@ -37,7 +37,7 @@ const FormEmail = () => {
     const token = await recaptchaRef.current.executeAsync();
     recaptchaRef.current.reset();
 
-    setLoading(true);
+    setSending(true);
     const infoEmail: EmailInfo = {
       name: event.target.nameValue.value,
       email: event.target.emailValue.value,
@@ -60,14 +60,14 @@ const FormEmail = () => {
       setFailed(true);
     }
 
-    setLoading(false);
+    setSending(false);
   };
 
-  if (loading) {
+  if (sending) {
     return (
       <div className="text-center infoMessage">
         <Spinner animation="border" role="status">
-          <span className="sr-only">{t("sendEmail.loadingSR")}</span>
+          <span className="sr-only">{t("sendEmail.sendingSR")}</span>
         </Spinner>
       </div>
     );

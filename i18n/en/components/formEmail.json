@@ -12,7 +12,7 @@
         "label": "Message"
     },
     "sendEmail":{
-        "loadingSR": "Loading...",
+        "sendingSR": "Sending...",
         "successSend": "Email successfully sent, wait for a response.",
         "generalFailedSend": "Sending the email failed, retry later.",
         "fillFailedSend": "It is necessary to fill in all fields",
