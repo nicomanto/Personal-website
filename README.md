@@ -2,7 +2,7 @@
 [![Website](https://img.shields.io/website?down_color=red&down_message=down&up_color=green&up_message=up&url=https%3A%2F%2Fwww.niccolomantovani.com)](https://shields.io/)
 
 ## Introduction
-Repository of my personal website [www.niccolomantovani.it](https://www.niccolomantovani.com/)
+Repository of my personal website [www.niccolomantovani.com](https://www.niccolomantovani.com/)
 
 ## Technology
 - [TypeScript](https://www.typescriptlang.org/)
