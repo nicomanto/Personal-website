@@ -33,6 +33,12 @@ const ExperiencePage = ({ skillList, timeLineElementList }: Props) => {
 export const getStaticProps: GetStaticProps = async () => {
   const skillList: Skill[] = [
     {
+      name: "Go",
+    },
+    {
+      name: "Flink",
+    },
+    {
       name: "TypeScript",
     },
     {
