@@ -75,6 +75,14 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const projects: Project[] = [
     {
+      i18nParam: "listManager",
+      imgName: "listing.png",
+      projectGitHubURL: "https://github.com/nicomanto/ListManager",
+      haveBERole: true,
+      haveFERole: false,
+      iconType: "work",
+    },
+    {
       i18nParam: "photoSite",
       imgName: "photo-site.png",
       projectGitHubURL: "https://github.com/nicomanto/Photo-site",

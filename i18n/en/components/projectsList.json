@@ -18,5 +18,9 @@
     "quizRoom": {
         "title": "QuizRoom",
         "description": "Software where you can create quiz blocks and run them. Designed to be used in schools by both teachers and student."
+    },
+    "listManager": {
+        "title": "ListManager",
+        "description": "Telegram bot that manager lists created by Users. It integrate a connection to the skill List Manager created for Alexa."
     }
 }
