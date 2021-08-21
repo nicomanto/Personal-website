@@ -78,6 +78,7 @@ export const getStaticProps: GetStaticProps = async () => {
       i18nParam: "listManager",
       imgName: "listing.png",
       projectGitHubURL: "https://github.com/nicomanto/ListManager",
+      projectWebisteURL: "https://t.me/ListManager8aBot",
       haveBERole: true,
       haveFERole: false,
       iconType: "work",
