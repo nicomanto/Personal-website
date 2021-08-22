@@ -21,6 +21,6 @@
     },
     "listManager": {
         "title": "ListManager",
-        "description": "Telegram bot that manager lists created by Users. It integrate a connection to the skill List Manager created for Alexa."
+        "description": "Telegram bot that manage lists created by users. It integrate a connection to the skill List Manager created for Alexa."
     }
 }
