@@ -14,7 +14,7 @@ const getSocial = (): Social[] => {
     },
     {
       icon: <SiLinkedin className="iconInfo" title="LinkedIn Niccolò Mantovani" />,
-      url: "/",
+      url: "https://www.linkedin.com/in/niccol%C3%B2-mantovani-25b54621b",
     },
     {
       icon: <SiTelegram className="iconInfo" title="Telegram Niccolò Mantovani" />,
