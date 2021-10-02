@@ -115,8 +115,17 @@ export const getStaticProps: GetStaticProps = async () => {
   const timeLineElementList: TimeLineElement[] = [
     {
       date: {
-        date: "09/2018 -",
+        date: "09/2021 - ",
         presentI18n: true,
+      },
+      iconType: "work",
+      i18nParam: "datasoil",
+      websiteURL: "https://datasoil.it/",
+    },
+    {
+      date: {
+        date: "09/2018 - 09/2021",
+        presentI18n: false,
       },
       iconType: "education",
       i18nParam: "unipd",
