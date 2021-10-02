@@ -110,6 +110,9 @@ export const getStaticProps: GetStaticProps = async () => {
     {
       name: "React",
     },
+    {
+      name: "MongoDB",
+    },
   ];
 
   const timeLineElementList: TimeLineElement[] = [
