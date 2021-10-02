@@ -9,5 +9,10 @@
         "place": "Padova, PD",
         "description": "Laurea Triennale Scuola di Scienze, indirizzo Informatico. Conoscenza approfondità di molti linguaggi di programmazione, sia funzionali che ad oggetti. Acquisizione di best practices nell'ambito di sviluppo software riguardo al suo ciclo di vita e alla gestione dell'ogranizzazione del team di sviluppo tramite metodologie agili."
     },
+    "datasoil": {
+        "title": "Datasoil",
+        "place": "Padova, PD",
+        "description": "Tirocinio extracurriculare. Programmatore software lato Back-end principalmente nell'ambito dell'analisi ed elaborazione in tempo reale di flussi di dati."
+    },
     "present": "presente"
 }

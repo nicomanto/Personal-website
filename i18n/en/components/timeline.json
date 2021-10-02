@@ -9,5 +9,10 @@
         "place": "Padua, PD",
         "description": "Bachelor's Degree School of Sciences, IT specialization. In-depth knowledge of many programming languages, both functional and object-oriented. Acquisition of best practices in the field of software development regarding its life cycle and management of the organization of the development team through agile methodologies."
     },
+    "datasoil": {
+        "title": "Datasoil",
+        "place": "Padua, PD",
+        "description": "Extracurricular internship. Back-end software programmer mainly in the online analysis and processing of data streams."
+    },
     "present": "present"
 }
