@@ -25,6 +25,6 @@
     },
     "coinbaseBroker": {
         "title": "CoinbaseBroker",
-        "description": "Script che permette la vendita di cryptovalute dopo il superamento di specifiche soglie sulla piattaforma Coinbase"
+        "description": "Script che permette la vendita di cryptovalute dopo il superamento di specifiche soglie sulla piattaforma Coinbase."
     }
 }

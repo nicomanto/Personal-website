@@ -25,6 +25,6 @@
     },
     "coinbaseBroker": {
         "title": "CoinbaseBroker",
-        "description": "Script that sells cryptocurrencies after exceeding specific thresholds on the Coinbase platform"
+        "description": "Script that sells cryptocurrencies after exceeding specific thresholds on the Coinbase platform."
     }
 }
