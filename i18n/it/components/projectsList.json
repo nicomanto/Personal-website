@@ -22,5 +22,9 @@
     "listManager": {
         "title": "ListManager",
         "description": "Bot Telegram che permettere di gestire delle liste definite dall'utente. Inoltre permette il collegamento con la skill List Manager di Alexa."
+    },
+    "coinbaseBroker": {
+        "title": "CoinbaseBroker",
+        "description": "Script che permette la vendita di cryptovalute dopo il superamento di specifiche soglie sulla piattaforma Coinbase"
     }
 }

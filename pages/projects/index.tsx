@@ -75,6 +75,14 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const projects: Project[] = [
     {
+      i18nParam: "coinbaseBroker",
+      imgName: "broker.png",
+      projectGitHubURL: "https://github.com/nicomanto/CoinbaseBroker",
+      haveBERole: true,
+      haveFERole: false,
+      iconType: "work",
+    },
+    {
       i18nParam: "listManager",
       imgName: "listing.png",
       projectGitHubURL: "https://github.com/nicomanto/ListManager",

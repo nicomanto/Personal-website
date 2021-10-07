@@ -22,5 +22,9 @@
     "listManager": {
         "title": "ListManager",
         "description": "Telegram bot that manage lists created by users. It integrate a connection to the skill List Manager created for Alexa."
+    },
+    "coinbaseBroker": {
+        "title": "CoinbaseBroker",
+        "description": "Script that sells cryptocurrencies after exceeding specific thresholds on the Coinbase platform"
     }
 }
