@@ -113,6 +113,9 @@ export const getStaticProps: GetStaticProps = async () => {
     {
       name: "MongoDB",
     },
+    {
+      name: "Kafka streams",
+    },
   ];
 
   const timeLineElementList: TimeLineElement[] = [
