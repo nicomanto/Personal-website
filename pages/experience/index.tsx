@@ -122,7 +122,7 @@ export const getStaticProps: GetStaticProps = async () => {
     {
       date: {
         date: "09/2021 - ",
-        presentI18n: true,
+        currentI18n: true,
       },
       iconType: "work",
       i18nParam: "datasoil",
@@ -131,7 +131,7 @@ export const getStaticProps: GetStaticProps = async () => {
     {
       date: {
         date: "09/2018 - 09/2021",
-        presentI18n: false,
+        currentI18n: false,
       },
       iconType: "education",
       i18nParam: "unipd",
@@ -140,7 +140,7 @@ export const getStaticProps: GetStaticProps = async () => {
     {
       date: {
         date: "09/2013 - 07/2018",
-        presentI18n: false,
+        currentI18n: false,
       },
       iconType: "education",
       i18nParam: "itis",

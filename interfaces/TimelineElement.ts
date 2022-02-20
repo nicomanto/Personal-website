@@ -7,5 +7,5 @@ export default interface TimeLineElement {
 
 interface DateTimeLine {
   readonly date: string;
-  readonly presentI18n: boolean;
+  readonly currentI18n: boolean;
 }

@@ -18,7 +18,7 @@ const ExperienceTimeline = ({ timeLineElementList }: Props) => {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={element.date.presentI18n ? element.date.date + t("present") : element.date.date}
+            date={element.date.currentI18n ? element.date.date + t("current") : element.date.date}
             icon={
               element.iconType === "education" ? (
                 <IoSchoolOutline title="education" />
