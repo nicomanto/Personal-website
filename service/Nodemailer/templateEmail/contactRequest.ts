@@ -322,7 +322,7 @@ export const contactHMTLTemplate = (emailInfo: EmailInfo): string => {
     <tr>
       <td style="padding-right: 0px;padding-left: 0px;" align="center">
         <a href="https://www.niccolomantovani.com" target="_blank">
-        <img align="center" border="0" src="https://images.unlayer.com/projects/0/1647611034371-logo.svg" alt="Lettera N di colore nero" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 5%;max-width: 23px;" width="23"/>
+        <img align="center" border="0" src="https://images.unlayer.com/projects/0/1647611034371-logo.svg" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 5%;max-width: 23px;" width="23"/>
         </a>
       </td>
     </tr>
