@@ -121,7 +121,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const timeLineElementList: TimeLineElement[] = [
     {
       date: {
-        date: "09/2021 - ",
+        date: "04/2022 - ",
         currentI18n: true,
       },
       iconType: "work",
