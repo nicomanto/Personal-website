@@ -75,6 +75,15 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const projects: Project[] = [
     {
+      i18nParam: "trendInsight",
+      imgName: "trendInsight.png",
+      projectGitHubURL: "https://github.com/nicomanto/TrendInsight",
+      projectWebisteURL: "https://twitter.com/insight_trend",
+      haveBERole: true,
+      haveFERole: false,
+      iconType: "work",
+    },
+    {
       i18nParam: "coinbaseBroker",
       imgName: "broker.png",
       projectGitHubURL: "https://github.com/nicomanto/CoinbaseBroker",

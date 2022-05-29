@@ -26,5 +26,9 @@
     "coinbaseBroker": {
         "title": "CoinbaseBroker",
         "description": "Script that sells cryptocurrencies after exceeding specific thresholds on the Coinbase platform."
+    },
+    "trendInsight": {
+        "title": "TrendInsight",
+        "description": "Twitter bot that shows trends insights about popular tweets."
     }
 }

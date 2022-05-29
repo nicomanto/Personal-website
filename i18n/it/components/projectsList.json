@@ -26,5 +26,9 @@
     "coinbaseBroker": {
         "title": "CoinbaseBroker",
         "description": "Script che permette la vendita di cryptovalute dopo il superamento di specifiche soglie sulla piattaforma Coinbase."
+    },
+    "trendInsight": {
+        "title": "TrendInsight",
+        "description": "Bot di Twitter che mostra statistiche sui tweet più popolari della piattaforma."
     }
 }
