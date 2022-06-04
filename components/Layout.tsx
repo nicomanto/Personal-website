@@ -61,8 +61,11 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
             &copy; 2021
             {" "}
             {"Niccolò Mantovani"}
+            <br/>
+            <small>
+              {t('last_update')}: <time>04/06/2022</time>
+            </small>
           </p>
-
           <Button variant="outline-dark" onClick={() => {changeLanguage("it");}} size="sm">IT</Button>
           <Button variant="outline-dark" onClick={() => {changeLanguage("en");}} size="sm">EN</Button>
         </footer>
