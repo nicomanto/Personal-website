@@ -1,4 +1,3 @@
 #!/bin/bash
-export DATE_NOW=`date +%d/%m/%Y`
-vercel env ls
+export NEXT_PUBLIC_DATE_NOW=`date +%d/%m/%Y`
 next build
