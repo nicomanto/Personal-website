@@ -1,5 +1,4 @@
 #!/bin/bash
-date
-d=`date +%d/%m/%Y`
-echo $d
+export DATE_NOW=`date +%d/%m/%Y`
+printenv
 next build
