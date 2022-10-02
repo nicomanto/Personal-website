@@ -6,6 +6,8 @@ import CookieConsent from "react-cookie-consent";
 import i18n from "../i18n/config";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const PersonalWebsite = ({ Component, pageProps }: AppProps) => {
   const { t } = useTranslation(["cookie"]);
