@@ -63,7 +63,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
             {"Niccolò Mantovani"}
             <br/>
             <small>
-              {t('last_update')}: <time>04/06/2022</time>
+              {t('last_update')}: <time>{process.env.NEXT_PUBLIC_DATE_NOW}</time>
             </small>
           </p>
           <Button variant="outline-dark" onClick={() => {changeLanguage("it");}} size="sm">IT</Button>
