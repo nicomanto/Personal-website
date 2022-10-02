@@ -13,7 +13,7 @@
   "homepage": "https://github.com/nicomanto/Personal-website#readme",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "./build.sh",
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint . --ext ts,tsx --fix",
