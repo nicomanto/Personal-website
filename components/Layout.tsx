@@ -58,7 +58,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
       <footer className="text-center my-4">
           <p lang="it">
             {" "}
-            &copy; 2021
+            &copy; {process.env.NEXT_PUBLIC_DATE_NOW.split("-")[2]}
             {" "}
             {"Niccolò Mantovani"}
             <br/>
