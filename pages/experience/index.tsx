@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps = async () => {
       abbr: "Hypertext Preprocessor",
     },
     {
-      name: "Boostrap",
+      name: "Bootstrap",
     },
     {
       name: "API",
