@@ -30,5 +30,9 @@
     "trendInsight": {
         "title": "TrendInsight",
         "description": "Twitter bot that shows trends insights about popular tweets."
+    },
+    "wishy": {
+        "title": "Wishy",
+        "description": "Customized wishlist."
     }
 }
