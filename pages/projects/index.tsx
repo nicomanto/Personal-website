@@ -149,7 +149,7 @@ export const getStaticProps: GetStaticProps = async () => {
       haveBERole: true,
       haveFERole: true,
       iconType: "academic",
-    }
+    },
   ];
 
   return {
