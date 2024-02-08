@@ -30,5 +30,9 @@
     "trendInsight": {
         "title": "TrendInsight",
         "description": "Bot di Twitter che mostra statistiche sui tweet più popolari della piattaforma."
+    },
+    "wishy": {
+        "title": "Wishy",
+        "description": "Lista dei desideri personalizzata."
     }
 }
