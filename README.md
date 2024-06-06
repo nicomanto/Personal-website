@@ -1,5 +1,5 @@
 # Personal-website
-![](https://api.checklyhq.com/v1/badges/checks/99c0d7c3-1787-40fe-a43f-931cf64e00e9?style=flat-square&theme=light)
+[![Niccolò's Website](https://api.checklyhq.com/v1/badges/checks/99c0d7c3-1787-40fe-a43f-931cf64e00e9?style=social&theme=light)](https://www.niccolomantovani.com/)
 
 ## Introduction
 Repository of my personal website [www.niccolomantovani.com](https://www.niccolomantovani.com/)
