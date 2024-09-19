@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Badge, ListGroup } from "react-bootstrap";
 import { IoCalendarSharp, IoLanguageSharp, IoLocationSharp } from "react-icons/io5";
-import { SiInstagram, SiGithub, SiLinkedin, SiTwitter, SiTelegram } from "react-icons/si";
+import { SiInstagram, SiGithub, SiLinkedin, SiX, SiTelegram } from "react-icons/si";
 import { HiOutlineDownload } from "react-icons/hi";
 import { Social, PersonalInfoForList } from "../../interfaces/PersonalInfo";
 
@@ -25,8 +25,8 @@ const getSocial = (): Social[] => {
       url: "https://www.instagram.com/niccolo_mantovani",
     },
     {
-      icon: <SiTwitter className="iconInfo" title="Twitter Niccolò Mantovani" />,
-      url: "https://twitter.com/niccomanto49",
+      icon: <SiX className="iconInfo" title="Twitter Niccolò Mantovani" />,
+      url: "https://x.com/niccomanto49",
     },
   ];
 
