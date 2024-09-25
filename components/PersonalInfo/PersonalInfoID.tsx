@@ -25,7 +25,7 @@ const getSocial = (): Social[] => {
       url: "https://www.instagram.com/niccolo_mantovani",
     },
     {
-      icon: <SiX className="iconInfo" title="Twitter Niccolò Mantovani" />,
+      icon: <SiX className="iconInfo" title="X Niccolò Mantovani" />,
       url: "https://x.com/niccomanto49",
     },
   ];
