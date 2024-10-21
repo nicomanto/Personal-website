@@ -66,6 +66,9 @@
 
 .badgeSD{
   font-size: 100%;
+  background-color: #183f73;
+  color: white;
+  margin: "5px 5px 5px 5px"
 }
 
 .nameTitle{
