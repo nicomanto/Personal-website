@@ -19,6 +19,8 @@
   letter-spacing: 0.15rem;
   display: inline-block;
   position: relative;
+  margin-left: auto;     /* Push the links to the right */
+  margin-right: 0;       /* Ensure no extra space is added on the right */
 }
 
 .navLink:after{    
