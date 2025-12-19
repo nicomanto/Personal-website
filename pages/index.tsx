@@ -16,8 +16,31 @@ const IndexPage = () => {
         <Col lg className="biographyIndex">
           <h1>{t("title")}</h1>
           <p>
-            <Trans t={t} i18nKey="biography">
-              Ciao, mi chiamo Niccolò Mantovani e sono uno <strong>sviluppatore software</strong>.<br/>Sono sempre stato un ragazzo appassionato dell'ambito tecnolgico, sopratutto perchè è un settore in continuo sviluppo e questo mi affascina molto. Durante il periodo accademico, da prima studiando alla scuola <em>ITIS Enrico Fermi di Mantova</em> e poi all'<em>Università degli studi di Padova</em> ho appreso le capacità di sviluppo di un applicativo software nella sua totalità.<br/><br/>Sviluppo principalmente per quanto riguarda la parte <strong>Back-end</strong> degli applicativi, i quali devono essere scalabili, funzionali e sicuri per garantire un risultato ottimale. Sono comunque sempre disponibile ad affrontare nuove sfide e ad ampliare il mio bagaglio culturale per quanto riguarda la compressione di nuove tecnolgie e allo sviluppo tramite esse.<br/>Attualmente risiedo in un piccolo paese in provincia di Mantova, ma molto spesso mi trovo anche nella città di Padova.<br/>Contattami al più presto!  {/* eslint-disable-line*/}
+            <Trans t={t} 
+              i18nKey="biography" 
+              components={{
+                1: <strong />,
+                2: <strong />,
+                3: <strong />,
+                4: <br />,
+                5: <br />,
+                6: <strong />,
+                7: <strong />,
+                8: <strong />,
+                9: <br />,
+                10: <strong />,
+                11: <strong />,
+                12: <br />
+            }}>
+              Ciao, mi chiamo Niccolò Mantovani e sono uno{" "}
+              <strong>sviluppatore software Back-End</strong>{" "}
+              con solida esperienza nel linguaggio <strong>Golang</strong>{" "}
+              e nell’utilizzo dei servizi <strong>AWS</strong>.
+              Mi occupo dell’intero ciclo di vita delle applicazioni, dalla progettazione e sviluppo fino al deploy e alla gestione in produzione di servizi scalabili e affidabili.
+              Utilizzo quotidianamente anche altri linguaggi di programmazione come{" "}
+              <strong>JavaScript</strong>, <strong>Python</strong> e <strong>Java</strong>, adattando le tecnologie al contesto e alle esigenze del progetto.
+              Ho una forte esperienza con <strong>MongoDB</strong> e, più in generale, con soluzioni database di tipo <strong>NoSQL</strong>, che impiego per la progettazione e gestione di sistemi orientati alle performance e alla scalabilità.
+              Sono una persona curiosa e orientata alla crescita continua, sempre aperta ad affrontare nuove sfide e ad approfondire nuove tecnologie per migliorare la qualità delle soluzioni sviluppate.
             </Trans>
           </p>
 
