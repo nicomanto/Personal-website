@@ -12,7 +12,7 @@
     "datasoil": {
         "title": "Datasoil",
         "place": "Padova, PD",
-        "description": "Apprendistato. Junior Back-end developer riguardo principalmente l'ambito dell'analisi ed elaborazione in tempo reale di flussi di dati."
+        "description": "Tempo pieno. Sviluppo e manutenzione di una piattaforma Digital Twin per supportare l’operatività aziendale, dalla gestione degli asset fino al ticketing. Il mio lavoro si concentra sullo sviluppo back-end in Golang, con MongoDB come database, e sulla gestione del deploy e del monitoraggio tramite servizi AWS. Mi occupo inoltre dell’analisi e dell’elaborazione in tempo reale di flussi di dati, garantendo efficienza e affidabilità della piattaforma."
     },
     "current": "presente"
 }

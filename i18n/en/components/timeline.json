@@ -12,7 +12,7 @@
     "datasoil": {
         "title": "Datasoil",
         "place": "Padua, PD",
-        "description": "Apprenticeship. Junior Back-end developer mainly in the online analysis and processing of data streams topic."
+        "description": "Full-time Back-end Developer, responsible for developing and maintaining a Digital Twin platform to support business operations, from asset management to ticketing. My work focuses on back-end development in Golang, using MongoDB as the database, and managing deployment and monitoring via AWS services. I also handle real-time data stream analysis and processing, ensuring platform efficiency and reliability."
     },
     "current": "current"
 }
