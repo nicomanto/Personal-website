@@ -34,15 +34,15 @@ const IndexPage = () => {
                 12: <br />,
               }}
             >
-              Ciao, mi chiamo Niccolò Mantovani e sono uno{" "}
-              <strong>sviluppatore software Back-End</strong>{" "}
-              con solida esperienza nel linguaggio <strong>Golang</strong>{" "}
-              e nell’utilizzo dei servizi <strong>AWS</strong>. 
-              Mi occupo dell’intero ciclo di vita delle applicazioni, dalla progettazione e sviluppo fino al deploy e alla gestione in produzione di servizi scalabili e affidabili.
-              Utilizzo quotidianamente anche altri linguaggi di programmazione come{" "}
-              <strong>JavaScript</strong>, <strong>Python</strong> e <strong>Java</strong>, adattando le tecnologie al contesto e alle esigenze del progetto.
-              Ho una forte esperienza con <strong>MongoDB</strong> e, più in generale, con soluzioni database di tipo <strong>NoSQL</strong>, che impiego per la progettazione e gestione di sistemi orientati alle performance e alla scalabilità.
-              Sono una persona curiosa e orientata alla crescita continua, sempre aperta ad affrontare nuove sfide e ad approfondire nuove tecnologie per migliorare la qualità delle soluzioni sviluppate.
+              Ciao, mi chiamo Niccolò Mantovani e sono uno{" "}{/* eslint-disable-line*/}
+              <strong>sviluppatore software Back-End</strong>{" "}{/* eslint-disable-line*/}
+              con solida esperienza nel linguaggio <strong>Golang</strong>{" "}{/* eslint-disable-line*/}
+              e nell’utilizzo dei servizi <strong>AWS</strong>.{/* eslint-disable-line*/}
+              Mi occupo dell’intero ciclo di vita delle applicazioni, dalla progettazione e sviluppo fino al deploy e alla gestione in produzione di servizi scalabili e affidabili.{/* eslint-disable-line*/}
+              Utilizzo quotidianamente anche altri linguaggi di programmazione come{" "}{/* eslint-disable-line*/}
+              <strong>JavaScript</strong>, <strong>Python</strong> e <strong>Java</strong>, adattando le tecnologie al contesto e alle esigenze del progetto.{/* eslint-disable-line*/}
+              Ho una forte esperienza con <strong>MongoDB</strong> e, più in generale, con soluzioni database di tipo <strong>NoSQL</strong>, che impiego per la progettazione e gestione di sistemi orientati alle performance e alla scalabilità.{/* eslint-disable-line*/}
+              Sono una persona curiosa e orientata alla crescita continua, sempre aperta ad affrontare nuove sfide e ad approfondire nuove tecnologie per migliorare la qualità delle soluzioni sviluppate.{/* eslint-disable-line*/}
             </Trans>
           </p>
 
