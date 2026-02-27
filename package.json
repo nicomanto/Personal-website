@@ -1,10 +1,19 @@
 {
-  "name": "ai-studio-applet",
-  "version": "0.1.0",
-  "private": true,
+  "name": "personal-website",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicomanto/Personal-website.git"
+  },
+  "author": "Niccolò Mantovani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicomanto/Personal-website/issues"
+  },
+  "homepage": "https://github.com/nicomanto/Personal-website#readme",
   "scripts": {
+    "build": "./build.sh",
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "clean": "next clean"

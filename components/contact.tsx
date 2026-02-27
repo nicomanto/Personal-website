@@ -163,11 +163,11 @@ export function Contact() {
               </div>
 
               {/*The ReCAPTCHA Component (Invisible or Visible) */}
-              {/*<ReCAPTCHA
+              <ReCAPTCHA
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY!}
                 size="invisible" 
                 ref={recaptchaRef}
-              />*/}
+              />
 
               {/* Submit */}
               <button
