@@ -31,8 +31,8 @@ export function Hero() {
           </h1>
           <p className="text-lg text-neutral-400 max-w-lg mb-10 leading-relaxed">
             {language === 'en' 
-              ? `Based in ${personalInfo.location}, I specialize in designing and developing scalable, high-performance back end systems, focusing on clean architecture, efficient data management, and robust API design.`
-              : `Con sede a ${personalInfo.location}, sono specializzato nella progettazione e nello sviluppo di sistemi back end scalabili e ad alte prestazioni, con particolare attenzione ad architetture pulite, gestione efficiente dei dati e progettazione di API robuste.`}
+              ? `Based in ${personalInfo.location}. I specialize in designing and developing scalable, high-performance back end systems, focusing on clean architecture, efficient data management, and robust API design.`
+              : `Con sede a ${personalInfo.location}. Sono specializzato nella progettazione e nello sviluppo di sistemi back end scalabili e ad alte prestazioni, con particolare attenzione ad architetture pulite, gestione efficiente dei dati e progettazione di API robuste.`}
             </p>
           <div className="flex flex-wrap gap-4">
             <a

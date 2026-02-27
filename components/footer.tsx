@@ -11,7 +11,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   // Extract the year from the env variable (assuming format DD/MM/YYYY)
-  const lastUpdateYear = process.env.NEXT_PUBLIC_DATE_NOW?.split("/")[2] || currentYear;
+  const lastUpdateYear = process.env.NEXT_PUBLIC_DATE_NOW || currentYear;
 
   const toggleLanguage = () => {
     setLanguage(language === 'it' ? 'en' : 'it');
