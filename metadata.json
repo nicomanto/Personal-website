@@ -1,0 +1,5 @@
+{
+  "name": "Modern Developer Portfolio",
+  "description": "A high-performance, dark-themed single-page portfolio for software developers, featuring smooth scrolling, animated timelines, and project filtering.",
+  "requestFramePermissions": ["geolocation"]
+}
