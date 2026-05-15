@@ -65,7 +65,7 @@ export const personalInfo: PersonalInfo = {
     it: "Italiana"
   },
   location: "Padova & Mantova, Italy",
-  email: "nicomanto49@gmail.com",
+  email: "nicomanto49+contact@gmail.com",
   github: "https://github.com/nicomanto",
   linkedin: "https://www.linkedin.com/in/niccol%C3%B2-mantovani-25b54621b",
   photoUrl: "https://www.gravatar.com/avatar/cceb51c1797bca97b7cd5211907dd744?s=1000",
