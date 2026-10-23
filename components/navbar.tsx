@@ -87,13 +87,13 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-neutral-900 border-b border-neutral-800 overflow-hidden"
           >
-            <div className="flex flex-col p-6 gap-4">
+            <div className="flex flex-col items-end p-6 gap-4">
               {navItems.map((item) => (
                 <a
                   key={item.id}
                   href={`#${item.id}`}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-neutral-300 hover:text-blue-500"
+                  className="text-lg font-medium text-right text-neutral-300 hover:text-blue-500"
                 >
                   {t(item.labelKey)}
                 </a>
